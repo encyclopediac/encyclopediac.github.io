@@ -7,6 +7,7 @@ import java.io.FileWriter;
 public class TextDocumentReaderWriter {
     private final static String READ_FILEPATH = "../TextFileExperiment.txt";
     private final static String WRITE_FILEPATH = "../TextFileExperiment.html";
+    private final static String TITLE_PATTERN = "###### ";
     private final static String H1_PATTERN = "##### ";
     private final static String H2_PATTERN = "#### ";
     private final static String H3_PATTERN = "### ";
@@ -33,13 +34,16 @@ public class TextDocumentReaderWriter {
             return;
         } else if (currentLine.contains(ONELEVELDOWN_PATTERN)) {
             oneLevelDeeper(reader, writer, currentLine);
+        } else if (currentLine.contains(TITLE_PATTERN)) {
+            writer.write("<title>" + currentLine.split(TITLE_PATTERN)[1] + "</title>");
+            writer.newLine();
         } else if (currentLine.contains(H1_PATTERN)) {
             writer.write("<h1>" + currentLine.split(H1_PATTERN)[1] + "</h1>");
             writer.newLine();
-        } else if (currentLine.contains(H2_PATTERN) && !(currentLine.contains(H1_PATTERN))) {
+        } else if (currentLine.contains(H2_PATTERN) && !(currentLine.contains(TITLE_PATTERN) && currentLine.contains(H1_PATTERN))) {
             writer.write("<h2>" + currentLine.split(H2_PATTERN)[1] + "</h2>");
             writer.newLine();
-        } else if (currentLine.contains(H3_PATTERN) && !(currentLine.contains(H1_PATTERN) && currentLine.contains(H2_PATTERN))) {
+        } else if (currentLine.contains(H3_PATTERN) && !(currentLine.contains(TITLE_PATTERN) && currentLine.contains(H1_PATTERN) && currentLine.contains(H2_PATTERN))) {
             writer.write("<h3>" + currentLine.split(H3_PATTERN)[1] + "</h3>");
             writeContentsOfTitles(reader, writer, currentLine);
             writer.newLine();
@@ -53,7 +57,7 @@ public class TextDocumentReaderWriter {
         currentLine = reader.readLine();
         writer.write("<body>");
         while (!(currentLine.contains(ONELEVELUP_PATTERN))) {
-            writer.write("<p>" + currentLine + "</p>");
+            writer.write("<u1><li>" + currentLine.split("- ")[1] + "</li></u1>");
             writer.newLine();
             currentLine = reader.readLine();
         }
