@@ -8,24 +8,30 @@
 #### Subheadline #1
 ##o
 ### Title #1
-- This is a bullet point
-- This is another bullet point
+source #1
+-This is a bullet point
+source #2
+-This is another bullet point
 ##c
 ##o
 ### Title #2
-- Another bullet point
+source #3
+-Another bullet point
 ##c
 ##c
 ##o
 #### Subheadline #2
 ##o
 ### Title #1
-- This is a bullet point
-- This is another bullet point
+source #1
+-This is a bullet point
+source #2
+-This is another bullet point
 ##c
 ##o
 ### Title #2
-- Another bullet point
+source #3
+-Another bullet point
 ##c
 ##c
 ##c
@@ -35,24 +41,30 @@
 #### Subheadline #1
 ##o
 ### Title #1
-- This is a bullet point
-- This is another bullet point
+source #1
+-This is a bullet point
+source #2
+-This is another bullet point
 ##c
 ##o
 ### Title #2
-- Another bullet point
+source #3
+-Another bullet point
 ##c
 ##c
 ##o
 #### Subheadline #2
 ##o
 ### Title #1
-- This is a bullet point
-- This is another bullet point
+source #1
+-This is a bullet point
+source #2
+-This is another bullet point
 ##c
 ##o
 ### Title #2
-- Another bullet point
+source #3
+-Another bullet point
 ##c
 ##c
 ##c

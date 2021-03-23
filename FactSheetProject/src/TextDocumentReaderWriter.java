@@ -57,8 +57,13 @@ public class TextDocumentReaderWriter {
         currentLine = reader.readLine();
         writer.write("<body>");
         while (!(currentLine.contains(ONELEVELUP_PATTERN))) {
-            writer.write("<u1><li>" + currentLine.split("- ")[1] + "</li></u1>");
-            writer.newLine();
+            if (currentLine.charAt(0) == '-') {
+                writer.write("<u1><li>" + currentLine.split("-")[1] + "</li></u1>");
+                writer.newLine();
+            } else {
+                writer.write("<h4>" + currentLine + "</h4>");
+                writer.newLine();
+            }
             currentLine = reader.readLine();
         }
         writer.write("</body>");
