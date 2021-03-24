@@ -1,8 +1,8 @@
 /* root */
 :root {
 	--transparent: rgba(0, 0, 0, 0.0);
-	--gray_lightlight: #ccffff;
-	--pink_light: #93e9e9;
+	--lightcyan_foreground: rgb(204, 255, 255, 1);
+	--cyan_border: #93e9e9;
 	--gray_dark: rgba(144, 144, 144, 1);
 	--gray_darkdark: rgba(112, 112, 112, 1);
 	--gray_darkdarkdark: rgba(96, 96, 96, 1);
@@ -36,7 +36,7 @@
 /* elements */
 html {
 	overflow-wrap: break-word;
-	background-color: var(--pink_light);
+	background-color: var(--cyan_border);
 	font-family: var(--helvetica); 
 }
 /* html * {
@@ -46,7 +46,7 @@ div, body, p, h1, h2, h3, h4, h5, img, blockquote, button, ul {
 	margin: 0;
 	padding: 0;
 	text-align: left;
-	color: black;
+	color: rgb(0, 0, 0);
 }
 h1, h2, h3, h4 {
 	padding: 0 0 var(--padding_default) 0;
@@ -101,7 +101,7 @@ a, button {
 	right: 0%;
 }
 .sidebar.main {
-	background-color: var(--gray_lightlight);
+	background-color: var(--lightcyan_foreground);
 	overflow-y: scroll;
 }
 .sidebar.main.active {
@@ -119,7 +119,7 @@ a, button {
 	height: var(--sidebar_collapse_button_size);
 	width: var(--sidebar_collapse_button_size);
 	border-radius: 50%;
-	border: solid 1px var(--gray_lightlight);
+	border: solid 1px var(--lightcyan_foreground);
 	background-color: var(--gray_dark);
 	color: white;
 	font-family: var(--monospace);
@@ -150,7 +150,7 @@ a, button {
 	width: var(--main_width);
 	margin: 0 var(--main_margin) 0 var(--main_margin);
 	padding: var(--padding_default);
-	background-color: var(--gray_lightlight);
+	background-color: var(--lightcyan_foreground);
 }
 .center.main.responsive {
 	width: var(--main_width_responsive);
@@ -189,7 +189,7 @@ a, button {
 .description_quote {
 	margin: var(--padding_default);
 	padding: var(--padding_default);
-	background-color: var(--pink_light);
+	background-color: var(--cyan_border);
 }
 .description_gallery {
 	text-align: center;

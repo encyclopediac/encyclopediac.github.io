@@ -1,0 +1,71 @@
+##o
+##o
+###### Title
+##c
+##o
+##### Headline #1
+##o
+#### Subheadline #1
+##o
+### Title #1
+source #1
+-This is a bullet point
+source #2
+-This is another bullet point
+##c
+##o
+### Title #2
+source #3
+-Another bullet point
+##c
+##c
+##o
+#### Subheadline #2
+##o
+### Title #1
+source #1
+-This is a bullet point
+source #2
+-This is another bullet point
+##c
+##o
+### Title #2
+source #3
+-Another bullet point
+##c
+##c
+##c
+##o
+##### Headline #2
+##o
+#### Subheadline #1
+##o
+### Title #1
+source #1
+-This is a bullet point
+source #2
+-This is another bullet point
+##c
+##o
+### Title #2
+source #3
+-Another bullet point
+##c
+##c
+##o
+#### Subheadline #2
+##o
+### Title #1
+source #1
+-This is a bullet point
+source #2
+-This is another bullet point
+##c
+##o
+### Title #2
+source #3
+-Another bullet point
+##c
+##c
+##c
+##c
