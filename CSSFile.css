@@ -73,6 +73,7 @@ p, button {
 }
 ul {
 	padding: 0 0 var(--padding_default) var(--padding_threehalf);
+	line-height: 1;
 }
 ul:only-child {
 	padding: 0 0 0 var(--padding_default);
