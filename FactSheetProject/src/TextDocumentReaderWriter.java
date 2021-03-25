@@ -84,7 +84,7 @@ public class TextDocumentReaderWriter {
                         break;
                     }
                 }
-                writer.write("<ul style=\"margin-left:" + INDENT_PX*numberOfIndents + "px\"" + "><li>" + currentLine.split("- ")[1] + "</li></ul>");
+                writer.write("<ul style=\"margin-left:" + INDENT_PX*numberOfIndents + "px\"" + "><li>" + currentLine.split("\\* ")[1] + "</li></ul>");
                 writer.newLine();
             } else {
                 writer.write("<h4>" + currentLine + "</h4>");
