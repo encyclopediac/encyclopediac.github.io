@@ -1,15 +1,15 @@
 ###### Encyclopediac's Totally Impartial Factsheet
 ##### Encyclopediac's Totally Impartial Factsheet.
 ### Legend and Keys.
-- [C]: This means I havw read through all sources in this section.
+- [C]: This means this all sources in section have been read and summarised.
 - [I]: This marks that a section is incomplete, either because the research is unsatisfactory or the sources have not been read completely. 
-- Referencing: Regular reports, studies, and articles follow the current format: link-to-source - [•Title•, author(s)].
-- Referencing: Meta-analyses follow the current format: link-to-source, meta-analysis study And/Or population size - [•Title•, author(s)].
+- Referencing: Regular reports, studies, and articles follow the current format: link-to-source, [•Title•, author(s)].
+- Referencing: Meta-analyses follow the current format: link-to-source, meta-analysis study And/Or population size, [•Title•, author(s)].
 ##c
 ##### Gender
 #### [C] Impact of Academic Self-Concept on Education and Achievement - And the Differences in Gender.
 ### Why ASC is important: reciprocal link between ASC and Academic Achievement.
-https://link.springer.com/article/10.1007/s10648-021-09600-1 (2021) - meta-analysis of 68 longitudinal studies (240 effect sizes) - [•A Meta-analysis of the Longitudinal Relationship Between Academic Self-Concept and Academic Achievement•, Huimin Wu, Yiqun Guo, Yingkai Yang, Le Zhao, Cheng Guo]
+https://link.springer.com/article/10.1007/s10648-021-09600-1 (2021) - meta-analysis of 68 longitudinal studies (240 effect sizes), [•A Meta-analysis of the Longitudinal Relationship Between Academic Self-Concept and Academic Achievement•, Huimin Wu, Yiqun Guo, Yingkai Yang, Le Zhao, Cheng Guo]
 - SUMMARY:
 - Key Quotes:
 *- The reciprocal relationship between academic self-concept (ASC) and academic achievement has been documented in multiple studies.
@@ -26,7 +26,7 @@ https://link.springer.com/article/10.1007/s10648-021-09600-1 (2021) - meta-analy
 *- Studies using standardized tests as indicators of achievement tended to report a weaker relationship between ASC and achievement than studies using grades or teacher-rating as indicators. As mentioned in the introduction, standardized testing is not high-stakes and not of personal significance for the students, while grades and teacher-rating often serve other functions such as motivating students (Kriegbaum et al., 2018; Pinxten et al., 2010). ASC possesses motivational properties, so this leads to the closer correlation between ASC and grade or teacher-rating as they are directly related to motivation (Valentine et al., 2004; Wylie, 1974).
 ##c
 ### Consistent gender gap in ASC.
-https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1532-7795.2010.00644.x (2010) - [•The Development of Students' Mathematics Self‐Concept in Relation to Gender: Different Countries, Different Trajectories?•, Gabriel Nagy, Helen M. G. Watt, Jacquelynne S. Eccles, Ulrich Trautwein, Oliver Lüdtke, Jürgen Baumert]
+https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1532-7795.2010.00644.x (2010), [•The Development of Students' Mathematics Self‐Concept in Relation to Gender: Different Countries, Different Trajectories?•, Gabriel Nagy, Helen M. G. Watt, Jacquelynne S. Eccles, Ulrich Trautwein, Oliver Lüdtke, Jürgen Baumert]
 - SUMMARY:
 - Key Quotes:
 *- This study extends previous research by examining the development of mathematics self‐concept across grades 7–12 in three cultural settings: Australia (Sydney; N=1,333), the United States (Michigan; N=2,443), and Germany (four federal states; N=4,688). Results of latent growth curve models document very similar patterns of self‐concept development in males and females in the three settings. First, gender differences in favor of boys were observed at the beginning of the observation period (grade 7). Second, gender was not significantly related to self‐concept change in either group, meaning that initial differences persisted across time. Third, the results provided no evidence that the form of the longitudinal change trajectories for mathematics self‐concept differed across the cultural settings.
