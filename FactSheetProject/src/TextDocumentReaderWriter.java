@@ -12,6 +12,9 @@ public class TextDocumentReaderWriter {
     private final static String H1_PATTERN = "##### ";
     private final static String H2_PATTERN = "#### ";
     private final static String H3_PATTERN = "### ";
+    private static int h1_Count = 0;
+    private static int h2_Count = 0;
+    private static int h3_Count = 0;
     private final static String ENDCONTENTSUMMARY_PATTERN = "##c";
     private final static String TITLE_META = "<meta property=\"og:title\" content=";
     private final static String HEAD_HTML_1 = "<!DOCTYPE html><html lang=\"en\"><head><meta name=\"viewport\" content=\"width=device-width\"><meta charset=\"utf-8\">";
@@ -41,12 +44,18 @@ public class TextDocumentReaderWriter {
         if (currentLine.contains(TITLE_PATTERN)) {
             writeTitleAndMetaTags(writer, currentLine);
         } else if (currentLine.contains(H1_PATTERN)) {
+            h1_Count++;
+            h2_Count = 0;
+            h3_Count = 0;
             writer.write("<h1" + produceIDs(currentLine, H1_PATTERN) + h1H2H3LinksBegin(currentLine, H1_PATTERN) + "</h1>");
             writer.newLine();
         } else if (currentLine.contains(H2_PATTERN) && !(currentLine.contains(TITLE_PATTERN) && currentLine.contains(H1_PATTERN))) {
+            h2_Count++;
+            h3_Count = 0;
             writer.write("<h2" + produceIDs(currentLine, H2_PATTERN) + h1H2H3LinksBegin(currentLine, H2_PATTERN) + "</h2>");
             writer.newLine();
         } else if (currentLine.contains(H3_PATTERN) && !(currentLine.contains(TITLE_PATTERN) && currentLine.contains(H1_PATTERN) && currentLine.contains(H2_PATTERN))) {
+            h3_Count++;
             writer.write("<h3" + produceIDs(currentLine, H3_PATTERN) + h1H2H3LinksBegin(currentLine, H3_PATTERN) + "</h3>");
             writeContentsOfTitles(reader, writer, currentLine);
             writer.newLine();
@@ -95,12 +104,12 @@ public class TextDocumentReaderWriter {
     }
 
     private static String h1H2H3LinksBegin (String currentLine, String pattern) throws Exception {
-        String linkText = "<a href=\"#" + currentLine.split(H3_PATTERN)[1].toLowerCase().replace(" ", "_") + "\">" + currentLine.split(H3_PATTERN)[1] + "</a>";
+        String linkText = "<a href=\"#" + h1_Count+ "-" + h2_Count + "-" + h3_Count + "_" + currentLine.split(H3_PATTERN)[1].toLowerCase().replace(" ", "_") + "\">" + currentLine.split(H3_PATTERN)[1] + "</a>";
         return linkText;
     }
 
     private static String produceIDs(String currentLine, String pattern) {
-        String linkID = " id=" + currentLine.split(pattern)[1].toLowerCase().replace(" ", "_") + ">";
+        String linkID = " id=" + h1_Count+ "-" + h2_Count + "-" + h3_Count + "_" + currentLine.split(pattern)[1].toLowerCase().replace(" ", "_") + ">";
         return linkID;
     }
 }

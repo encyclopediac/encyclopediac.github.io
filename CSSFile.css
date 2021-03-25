@@ -23,7 +23,7 @@
 	--fontsize_1: 28px;
 	--fontsize_2: 24px;
 	--fontsize_3: 20px;
-	--fontsize_4: 18px;
+	--fontsize_4: 17px;
 	
 	--padding_default: 16px;
 	--padding_threehalf: calc(var(--padding_default) * 1.5);
@@ -47,6 +47,8 @@ div, body, p, h1, h2, h3, h4, h5, img, blockquote, button, ul {
 	padding: 0;
 	text-align: left;
 	color: rgb(0, 0, 0);
+	text-align: justify;
+  	text-justify: inter-word;
 }
 h1, h2, h3, h4 {
 	padding: 0 0 var(--padding_default) 0;
@@ -67,13 +69,14 @@ h4 {
 	font-size: var(--fontsize_4);
 	font-style: italic;
 	font-weight: normal;
+	font-family: monospace, monospace;
 }
 p, button {
 	font-size: var(--fontsize_4);
 }
 ul {
 	padding: 0 0 var(--padding_default) var(--padding_threehalf);
-	line-height: 1;
+	line-height: 1.25;
 }
 ul:only-child {
 	padding: 0 0 0 var(--padding_default);
