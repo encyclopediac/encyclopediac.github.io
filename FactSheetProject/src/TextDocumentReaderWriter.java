@@ -13,7 +13,7 @@ public class TextDocumentReaderWriter {
     private final static String H3_PATTERN = "### ";
     private final static String ONELEVELUP_PATTERN = "##c";
     private final static String TITLE_META = "<meta property=\"og:title\" content=";
-    private final static String HEAD_HTML_1 = "<html lang=\"en\"><head><meta name=\"viewport\" content=\"width=device-width\"><meta charset=\"utf-8\">";
+    private final static String HEAD_HTML_1 = "<!DOCTYPE html><html lang=\"en\"><head><meta name=\"viewport\" content=\"width=device-width\"><meta charset=\"utf-8\">";
     private final static String HEAD_HTML_2 = "<meta charset=\"utf-8\"/><link rel=\"stylesheet\" href=\"CSSFile.css\"></head>";
     private final static String CENTER_MAIN = "<div id=\"main\" class=\"center main\">";
 
@@ -28,8 +28,9 @@ public class TextDocumentReaderWriter {
             writeNextTagsAndOrContent(reader, writer, currentLine);
             currentLine = reader.readLine();
         }
-        writer.write("</body>");
         writer.write("</div>");
+        writer.write("</body>");
+        writer.write("</html>");
         reader.close();
         writer.close();
     }
@@ -51,13 +52,13 @@ public class TextDocumentReaderWriter {
     }
 
     private static void writeTitleAndMetaTags(BufferedWriter writer, String currentLine) throws Exception {
-        writer.write(TITLE_META + "\""+ currentLine.split(TITLE_PATTERN)[1] + "\">");
         writer.write(HEAD_HTML_1);
+        writer.write(TITLE_META + "\""+ currentLine.split(TITLE_PATTERN)[1] + "\">");
         writer.write("<title>" + currentLine.split(TITLE_PATTERN)[1] + "</title>");
         writer.write(HEAD_HTML_2);
+        writer.write("<body>");
         writer.write(CENTER_MAIN);
         writer.newLine();
-        writer.write("<body>");
     }
 
     private static void writeContentsOfTitles(BufferedReader reader, BufferedWriter writer, String currentLine) throws Exception{
