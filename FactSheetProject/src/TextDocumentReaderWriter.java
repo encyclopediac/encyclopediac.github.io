@@ -11,7 +11,6 @@ public class TextDocumentReaderWriter {
     private final static String H1_PATTERN = "##### ";
     private final static String H2_PATTERN = "#### ";
     private final static String H3_PATTERN = "### ";
-    private final static String ONELEVELDOWN_PATTERN = "##o";
     private final static String ONELEVELUP_PATTERN = "##c";
     private final static String TITLE_META = "<meta property=\"og:title\" content=";
     private final static String HEAD_HTML_1 = "<html lang=\"en\"><head><meta name=\"viewport\" content=\"width=device-width\"><meta charset=\"utf-8\">";
@@ -22,11 +21,11 @@ public class TextDocumentReaderWriter {
         BufferedReader reader = new BufferedReader(new FileReader(READ_FILEPATH));
         File writeToHTML = new File(WRITE_FILEPATH);
         writeToHTML.delete();
-        
+
         BufferedWriter writer = new BufferedWriter(new FileWriter(WRITE_FILEPATH));
         String currentLine = reader.readLine();
         while (currentLine != null) {
-            oneLevelDeeper(reader, writer, currentLine);
+            writingNextTags(reader, writer, currentLine);
             currentLine = reader.readLine();
         }
         writer.write("</body>");
@@ -35,20 +34,11 @@ public class TextDocumentReaderWriter {
         writer.close();
     }
 
-    private static void oneLevelDeeper(BufferedReader reader, BufferedWriter writer, String currentLine) throws Exception {
-        currentLine = reader.readLine();
+    private static void writingNextTags(BufferedReader reader, BufferedWriter writer, String currentLine) throws Exception {
         if (currentLine == null) {
             return;
-        } else if (currentLine.contains(ONELEVELDOWN_PATTERN)) {
-            oneLevelDeeper(reader, writer, currentLine);
         } else if (currentLine.contains(TITLE_PATTERN)) {
-            writer.write(TITLE_META + "\""+ currentLine.split(TITLE_PATTERN)[1] + "\">");
-            writer.write(HEAD_HTML_1);
-            writer.write("<title>" + currentLine.split(TITLE_PATTERN)[1] + "</title>");
-            writer.write(HEAD_HTML_2);
-            writer.write(CENTER_MAIN);
-            writer.newLine();
-            writer.write("<body>");
+            writeTitleAndMetaTags(writer, currentLine);
         } else if (currentLine.contains(H1_PATTERN)) {
             writer.write("<h1" + produceIDs(currentLine, H1_PATTERN) + h1H2H3LinksBegin(currentLine, H1_PATTERN) + "</h1>");
             writer.newLine();
@@ -60,6 +50,16 @@ public class TextDocumentReaderWriter {
             writeContentsOfTitles(reader, writer, currentLine);
             writer.newLine();
         }
+    }
+
+    private static void writeTitleAndMetaTags(BufferedWriter writer, String currentLine) throws Exception {
+        writer.write(TITLE_META + "\""+ currentLine.split(TITLE_PATTERN)[1] + "\">");
+        writer.write(HEAD_HTML_1);
+        writer.write("<title>" + currentLine.split(TITLE_PATTERN)[1] + "</title>");
+        writer.write(HEAD_HTML_2);
+        writer.write(CENTER_MAIN);
+        writer.newLine();
+        writer.write("<body>");
     }
 
     private static void writeContentsOfTitles(BufferedReader reader, BufferedWriter writer, String currentLine) throws Exception{
