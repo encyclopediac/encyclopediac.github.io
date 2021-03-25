@@ -29,6 +29,7 @@ public class TextDocumentReaderWriter {
             oneLevelDeeper(reader, writer, currentLine);
             currentLine = reader.readLine();
         }
+        writer.write("</body>");
         writer.write("</div>");
         reader.close();
         writer.close();
@@ -47,14 +48,15 @@ public class TextDocumentReaderWriter {
             writer.write(HEAD_HTML_2);
             writer.write(CENTER_MAIN);
             writer.newLine();
+            writer.write("<body>");
         } else if (currentLine.contains(H1_PATTERN)) {
-            writer.write("<h1>" + currentLine.split(H1_PATTERN)[1] + "</h1>");
+            writer.write("<h1" + produceIDs(currentLine, H1_PATTERN) + h1H2H3LinksBegin(currentLine, H1_PATTERN) + "</h1>");
             writer.newLine();
         } else if (currentLine.contains(H2_PATTERN) && !(currentLine.contains(TITLE_PATTERN) && currentLine.contains(H1_PATTERN))) {
-            writer.write("<h2>" + currentLine.split(H2_PATTERN)[1] + "</h2>");
+            writer.write("<h2" + produceIDs(currentLine, H2_PATTERN) + h1H2H3LinksBegin(currentLine, H2_PATTERN) + "</h2>");
             writer.newLine();
         } else if (currentLine.contains(H3_PATTERN) && !(currentLine.contains(TITLE_PATTERN) && currentLine.contains(H1_PATTERN) && currentLine.contains(H2_PATTERN))) {
-            writer.write("<h3>" + currentLine.split(H3_PATTERN)[1] + "</h3>");
+            writer.write("<h3" + produceIDs(currentLine, H3_PATTERN) + h1H2H3LinksBegin(currentLine, H3_PATTERN) + "</h3>");
             writeContentsOfTitles(reader, writer, currentLine);
             writer.newLine();
         }
@@ -65,7 +67,6 @@ public class TextDocumentReaderWriter {
          * This fills in the bullet points that summarise sources
          */
         currentLine = reader.readLine();
-        writer.write("<body>");
         while (!(currentLine.contains(ONELEVELUP_PATTERN))) {
             if (currentLine.charAt(0) == '-') {
                 writer.write("<ul><li>" + currentLine.split("-")[1] + "</li></ul>");
@@ -76,6 +77,15 @@ public class TextDocumentReaderWriter {
             }
             currentLine = reader.readLine();
         }
-        writer.write("</body>");
+    }
+
+    private static String h1H2H3LinksBegin (String currentLine, String pattern) throws Exception {
+        String linkText = "<a href=\"#" + currentLine.split(H3_PATTERN)[1].toLowerCase().replace(" ", "_") + "\">" + currentLine.split(H3_PATTERN)[1] + "</a>";
+        return linkText;
+    }
+
+    private static String produceIDs(String currentLine, String pattern) {
+        String linkID = " id=" + currentLine.split(pattern)[1].toLowerCase().replace(" ", "_") + ">";
+        return linkID;
     }
 }
