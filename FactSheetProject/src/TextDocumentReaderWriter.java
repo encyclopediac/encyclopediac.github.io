@@ -5,17 +5,19 @@ import java.io.FileReader;
 import java.io.FileWriter;
 
 public class TextDocumentReaderWriter {
-    private final static String READ_FILEPATH = "../TextFileExperiment.txt";
-    private final static String WRITE_FILEPATH = "../TextFileExperiment.html";
+    private final static String READ_FILEPATH = "../Encyclopediac's Totally Impartial Factsheet.txt";
+    private final static String WRITE_FILEPATH = "../Encyclopediac's Totally Impartial Factsheet.html";
+
     private final static String TITLE_PATTERN = "###### ";
     private final static String H1_PATTERN = "##### ";
     private final static String H2_PATTERN = "#### ";
     private final static String H3_PATTERN = "### ";
-    private final static String ONELEVELUP_PATTERN = "##c";
+    private final static String ENDCONTENTSUMMARY_PATTERN = "##c";
     private final static String TITLE_META = "<meta property=\"og:title\" content=";
     private final static String HEAD_HTML_1 = "<!DOCTYPE html><html lang=\"en\"><head><meta name=\"viewport\" content=\"width=device-width\"><meta charset=\"utf-8\">";
     private final static String HEAD_HTML_2 = "<meta charset=\"utf-8\"/><link rel=\"stylesheet\" href=\"CSSFile.css\"></head>";
     private final static String CENTER_MAIN = "<div id=\"main\" class=\"center main\">";
+    private final static int INDENT_PX = 20;
 
     public static void main(String[] args) throws Exception {
         BufferedReader reader = new BufferedReader(new FileReader(READ_FILEPATH));
@@ -66,9 +68,23 @@ public class TextDocumentReaderWriter {
          * This fills in the bullet points that summarise sources
          */
         currentLine = reader.readLine();
-        while (!(currentLine.contains(ONELEVELUP_PATTERN))) {
-            if (currentLine.charAt(0) == '-') {
-                writer.write("<ul><li>" + currentLine.split("-")[1] + "</li></ul>");
+        while (!(currentLine.contains(ENDCONTENTSUMMARY_PATTERN))) {
+            if (currentLine.equals("")) {
+                //Nothing is done, ignore empty lines.
+            } else if (currentLine.charAt(0) == '-') {
+                writer.write("<ul><li>" + currentLine.split("- ")[1] + "</li></ul>");
+                //maybe edit to allow for indentation by how many * there are
+                writer.newLine();
+            } else if (currentLine.charAt(0) == '*') {
+                int numberOfIndents = 1;
+                for (int counter = 1; counter < currentLine.length(); counter++) {
+                    if (currentLine.charAt(counter) == '*') {
+                        numberOfIndents++;
+                    } else {
+                        break;
+                    }
+                }
+                writer.write("<ul style=\"margin-left:" + INDENT_PX*numberOfIndents + "px\"" + "><li>" + currentLine.split("- ")[1] + "</li></ul>");
                 writer.newLine();
             } else {
                 writer.write("<h4>" + currentLine + "</h4>");

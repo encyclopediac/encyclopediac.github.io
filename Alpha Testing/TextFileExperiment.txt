@@ -3,46 +3,46 @@
 #### Subheadline #1 #1
 ### Title #1
 source #1 #1
--This is a bullet point
+- This is a bullet point
 source #1 #2
--This is another bullet point
+**- This is another bullet point
 ##c
 ### Title #2
 source #1 #3
--Another bullet point
+***- Another bullet point
 ##c
 ##c
 #### Subheadline #1 #2
 ### Title #2 #1
 source #2 #1
--This is a bullet point
+- This is a bullet point
 source #2 #2
--This is another bullet point
+- This is another bullet point
 ##c
 ### Title #2 #2
 source #2 #3
--Another bullet point
+- Another bullet point
 ##c
 ##### Headline #2
 #### Subheadline #3 #1
 ### Title #3 #1
 source #3 #1
--This is a bullet point
+- This is a bullet point
 source #3 #2
--This is another bullet point
+- This is another bullet point
 ##c
 ### Title #3 #2
 source #3
--Another bullet point
+- Another bullet point
 ##c
 #### Subheadline #3 2
 ### Title #4 #1
 source #1
--This is a bullet point
+- This is a bullet point
 source #2
--This is another bullet point
+- This is another bullet point
 ##c
 ### Title #4 #2
 source #3
--Another bullet point
+- Another bullet point
 ##c
