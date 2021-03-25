@@ -25,7 +25,7 @@ public class TextDocumentReaderWriter {
         BufferedWriter writer = new BufferedWriter(new FileWriter(WRITE_FILEPATH));
         String currentLine = reader.readLine();
         while (currentLine != null) {
-            writingNextTags(reader, writer, currentLine);
+            writeNextTagsAndOrContent(reader, writer, currentLine);
             currentLine = reader.readLine();
         }
         writer.write("</body>");
@@ -34,10 +34,8 @@ public class TextDocumentReaderWriter {
         writer.close();
     }
 
-    private static void writingNextTags(BufferedReader reader, BufferedWriter writer, String currentLine) throws Exception {
-        if (currentLine == null) {
-            return;
-        } else if (currentLine.contains(TITLE_PATTERN)) {
+    private static void writeNextTagsAndOrContent(BufferedReader reader, BufferedWriter writer, String currentLine) throws Exception {
+        if (currentLine.contains(TITLE_PATTERN)) {
             writeTitleAndMetaTags(writer, currentLine);
         } else if (currentLine.contains(H1_PATTERN)) {
             writer.write("<h1" + produceIDs(currentLine, H1_PATTERN) + h1H2H3LinksBegin(currentLine, H1_PATTERN) + "</h1>");
