@@ -82,6 +82,23 @@ button {
 	border: none;
 	outline: none;
 }
+/* Links */
+a {
+	text-decoration: none;
+	color: black;
+}
+a:link {
+	color: inherit;
+}
+a:visited {
+	color: inherit;
+}
+a:hover {
+	color: inherit;
+}
+a:active {
+	color: inherit;
+}
 a, button {
 	cursor: pointer;
 }
