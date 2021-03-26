@@ -90,7 +90,7 @@ public class TextDocumentReaderWriter {
             if (currentLine.equals("")) {
                 //Nothing is done, ignore empty lines.
             } else if (currentLine.charAt(0) == '+') {
-                writer.write("<ul><li>" + currentLine.split("\\+ ")[1] + "<a href=\"https://encyclopediac.github.io/Encyclopediac's%20Totally%20Impartial%20Factsheet%20-%20Table%20of%20Contents.html.\" style=\"color:blue;text-decoration:underline\">Table of Contents</a>" + "</li></ul>");
+                writer.write("<ul><li>" + currentLine.split("\\+ ")[1] + "<a href=\"https://encyclopediac.github.io/Encyclopediac's%20Totally%20Impartial%20Factsheet%20-%20Table%20of%20Contents.html\" style=\"color:blue;text-decoration:underline\">Table of Contents</a>" + "</li></ul>");
                 writer.newLine();
             } else if (currentLine.charAt(0) == '-') {
                 writer.write("<ul><li>" + currentLine.split("- ")[1] + "</li></ul>");
