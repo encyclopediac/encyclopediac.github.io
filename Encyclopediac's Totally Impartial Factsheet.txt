@@ -8,7 +8,6 @@
 - The mediator between head and hands must be the heart!
 ##c
 ### Legend and Keys.
-- [C]: This means this all sources in section have been read and summarised.
 - [I]: This marks that a section is incomplete, either because the research is unsatisfactory or the sources have not been read completely. 
 - Referencing: 
 * Regular reports, studies, and articles follow the current format: [•Title•, (published year/date), author(s)]; then the link to the source if available above the summary.
@@ -16,7 +15,7 @@
 * If a source has no date, then 'n.d.' is written.
 ##c
 ##### Gender & Sexism
-#### [C] Impact of Academic Self-Concept (ASC) on Education and Achievement - And the Differences in Gender.
+#### Impact of Academic Self-Concept (ASC) on Education and Achievement - And the Differences in Gender.
 ### Content summary:
 - Not only is ASC closely linked to academic achievement, but it can be seen that increasing the former has positive implications for the latter. Additionally, a consistent gender gap in ASC can be seen across multiple western cultures from grades 7-11, and the gap is likely traceable to gender-stereotypes. A certain ASC in specific domains (boys are seen to lead in ASC in most domains, though not all) can lead to students pursuing different careers and subjects in the future. Therefore: since differing ASCs in certain domains lead to different career and expertise choices later on in life, one way to improve gender distribution in professions and subjects could be seeking to fight against gender stereotypes to decrease the ASC gender gap, which also could lead to improved academic achivement by girls in certain domains.
 ##c
@@ -59,7 +58,7 @@ image Graph of data from the United States illustrating a consistent gap between
 * findings suggest that—at least for the cultural settings examined, the period from grades 7 to 12, and the mathematical domain—initial gender differences in self‐concept persist unchanged. This does not imply that there are no gender differences in self‐concept development per se. It seems more likely—at least for the mathematical domain—that such differences materialize before or/and after the period considered here. Indeed, the findings provided by Jacobs et al. (2002) suggest that the largest gender‐related changes occur between grades 1 and 7, a period that was not included in the present study.
 * some research suggests that gender differences in mathematics self‐concept emerge as early as the beginning of primary school (Fredricks & Eccles, 2002; Jacobs et al., 2002). From this perspective, stereotypic gender roles seem to have an important impact early in individual developmental trajectories. Our research suggests that such stereotypes seem to be more influential in some countries (e.g., Germany) than in others. This finding is line with the higher gender norm differentiation reported for German society (Williams & Best, 1990).
 ##c
-#### [C] Academic Self-Efficacy (ASE) and Impacts on Achievement - and Differences In Gender.
+#### Academic Self-Efficacy (ASE) and Impacts on Achievement - and Differences In Gender.
 ### Content summary:
 - ASE is a key predictor of academic achievement and can influence career path and achievement. ASE differs from ASC in that ASE is more task-specific, whereas ASC is more domain-specific (narrow vs. broad). Differences in ASE by girls and boys shows tha boys lead in many ASE metrics, though not all, and that this gap grows more significant with age. The gaps are consistent with gender stereotypes. Therefore: to improve gender balances in a careers and 'economic achievement', society ought to fight against gender stereotypes to prevent the ASE gap from manifesting in a significant way.  
 ##c
@@ -90,7 +89,7 @@ image Graph of data from the United States illustrating a consistent gap between
 ### Content summary:
 - Test
 ##c
-### [C] Trans Women and Breast Cancer 
+### Trans Women and Breast Cancer 
 [•Cancer Risk in Transgender People•, 2019, Christel J.M. de Blok MD, Koen M.A. Dreijerink MD PhD, Martin den Heijer MD PhD]
 - LINK: https://www.sciencedirect.com/science/article/abs/pii/S0889852919300106
 - SUMMARY: test
@@ -112,7 +111,7 @@ image Graph of data from the United States illustrating a consistent gap between
 * Transgender women may have a greater chance of getting breast cancer due to the medicines they take to boost female hormones and lower male hormones. A person’s family history and genetic makeup can also increase their chances of breast cancer.
 * If you are 50 years of age or older and you had at least 5 years of hormonal therapy, you should have a screening mammogram every 2 years.
 ##c
-### [C] Trans Women and Cervical Cancer
+### Trans Women and Cervical Cancer
 [•Trans women and cervical cancer screening•, n.d.]
 - LINK: https://www.cancer.ca/en/prevention-and-screening/reduce-cancer-risk/find-cancer-early/screening-in-lgbtq-communities/trans-women-and-cervical-cancer-screening
 - SUMMARY: test
@@ -134,7 +133,7 @@ image Graph of data from the United States illustrating a consistent gap between
 ### Content summary;
 - Test
 ##c
-### [I] Social Welfare/Cash Transfers Do Not Lead to More Money Spent on Demerit Goods
+### [I] Cash Transfers Do Not Lead to More Money Spent on Demerit Goods
 [•Cash Transfers and Temptation Goods A Review of Global Evidence•, 2014, David K. Evans, Anna Popova]
 - LINK: http://documents1.worldbank.org/curated/en/617631468001808739/pdf/WPS6886.pdf
 - SUMMARY:
@@ -157,17 +156,16 @@ image Graph of data from the United States illustrating a consistent gap between
 - Key Quotes:
 * We identified 47 peer-reviewed studies that that met our criteria for adding to knowledge about whether conversion therapy (CT) can alter sexual orientation without causing harm. Thirteen of those studies included primary research. Of those, 12 concluded that CT is ineffective and/or harmful, finding links to depression, suicidality, anxiety, social isolation and decreased capacity for intimacy. Only one study concluded that sexual orientation change efforts could succeed—although only in a minority of its participants, and the study has several limitations: its entire sample self-identified as religious and it is based on self-reports, which can be biased and unreliable. The remaining 34 studies do not make an empirical determination about whether CT can alter sexual orientation but may offer useful observations to help guide practitioners who treat LGB patients.
 * we concluded that there is no credible evidence that sexual orientation can be changed through therapeutic intervention. Most accounts of such change are akin to instances of “faith healing.” There is also powerful evidence that trying to change a person’s sexual orientation can be extremely harmful. Taken together, the overwhelming consensus among psychologists and psychiatrists who have studied conversion therapy or treated patients who are struggling with their sexual orientation is that therapeutic intervention cannot change sexual orientation, a position echoed by all major professional organizations in the field, including the American Psychological Association whose substantial 2009 report is available here.
-##c
 [•Report of the American Psychological Association Task Force on Appropriate Therapeutic Responses to Sexual Orientation•, 2009, Judith M. Glassgold PsyD, Lee Beckstead PhD, Jack Drescher MD, Beverly Greene PhD, Robin Lin Miller PhD, Roger L. Worthington PhD, Clinton W. Anderson PhD]
 - LINK: https://www.apa.org/pi/lgbt/resources/therapeutic-response.pdf
 - SUMMARY: test
 - Key Quotes:
 * As part of the fulfillment of its charge, the task force undertook an extensive review of the recent literature on psychotherapy and the psychology of sexual orientation. There is a growing body of evidence concluding that sexual stigma, manifested as prejudice and discrimination directed at non-heterosexual sexual orientations and identities, is a major source of stress for sexual minorities.* This stress, known as minority stress, is a factor in mental health disparities found in some sexual minorities. 
 * We see this multiculturally competent and affirmative approach as grounded in an acceptance of the following scientific facts:
-* Same-sex sexual attractions, behavior, and orientations per se are normal and positive variants of human sexuality—in other words, they do not indicate either mental or developmental disorders.
-* Homosexuality and bisexuality are stigmatized, and this stigma can have a variety of negative consequences (e.g., minority stress) throughout the life span.
-* Same-sex sexual attractions and behavior occur in the context of a variety of sexual orientations and sexual orientation identities, and for some, sexual orientation identity (i.e., individual or group membership and affiliation, self-labeling) is fluid or has an indefinite outcome.
-* Gay men, lesbians, and bisexual individuals form stable, committed relationships and families that are equivalent to heterosexual relationships and families in essential respects.
+** Same-sex sexual attractions, behavior, and orientations per se are normal and positive variants of human sexuality—in other words, they do not indicate either mental or developmental disorders.
+** Homosexuality and bisexuality are stigmatized, and this stigma can have a variety of negative consequences (e.g., minority stress) throughout the life span.
+** Same-sex sexual attractions and behavior occur in the context of a variety of sexual orientations and sexual orientation identities, and for some, sexual orientation identity (i.e., individual or group membership and affiliation, self-labeling) is fluid or has an indefinite outcome.
+** Gay men, lesbians, and bisexual individuals form stable, committed relationships and families that are equivalent to heterosexual relationships and families in essential respects.
 * The review covered the peer-reviewed journal articles in English from 1960 to 2007. Most studies in this area were conducted before 1981, and only a few studies have been conducted in the last 10 years.
 * We found serious methodological problems in this area of research; only a few studies met the minimal standards for evaluating whether psychological treatments such as efforts to change sexual orientation are effective.
 * We concluded that the early high-quality evidence is the best basis for predicting what the outcome of valid interventions would be.
