@@ -12,9 +12,11 @@ public class TextDocumentReaderWriter {
     private final static String H1_PATTERN = "##### ";
     private final static String H2_PATTERN = "#### ";
     private final static String H3_PATTERN = "### ";
-    private static int h1_Count = 0;
+    private static int h1_Count = -1;
+    // this is initialised at -1 so that the count startsfrom 0 when creating IDs.
     private static int h2_Count = 0;
     private static int h3_Count = 0;
+    private static int image_Count = 0;
     private final static String ENDCONTENTSUMMARY_PATTERN = "##c";
     private final static String TITLE_META = "<meta property=\"og:title\" content=";
     private final static String HEAD_HTML_1 = "<!DOCTYPE html><html lang=\"en\"><head><meta name=\"viewport\" content=\"width=device-width\"><meta charset=\"utf-8\">";
@@ -77,6 +79,7 @@ public class TextDocumentReaderWriter {
          * This fills in the bullet points that summarise sources
          */
         currentLine = reader.readLine();
+        image_Count = 0;
         while (!(currentLine.contains(ENDCONTENTSUMMARY_PATTERN))) {
             if (currentLine.equals("")) {
                 //Nothing is done, ignore empty lines.
@@ -96,20 +99,31 @@ public class TextDocumentReaderWriter {
                 writer.write("<ul style=\"margin-left:" + INDENT_PX*numberOfIndents + "px\"" + "><li>" + currentLine.split("\\* ")[1] + "</li></ul>");
                 writer.newLine();
             } else {
-                writer.write("<h4>" + currentLine + "</h4>");
-                writer.newLine();
+                if (currentLine.contains("image")) {
+                    String imagePath = h1_Count+ "-" + h2_Count + "-" + h3_Count + "-image-" + image_Count + ".png";
+                    writer.write("<div id=\"" + imagePath.split(".png")[0] + "-main\" class=\"center main image\">");
+                    writer.newLine();
+                    writer.write("<img src=\"images/" + imagePath+ "\" alt=\"" + currentLine.split("image ")[1] + "\">");
+                    writer.newLine();
+                    writer.write("</div>");
+                    writer.newLine();
+                    image_Count++;
+                } else {
+                    writer.write("<h4>" + currentLine + "</h4>");
+                    writer.newLine();
+                }
             }
             currentLine = reader.readLine();
         }
     }
 
     private static String h1H2H3LinksBegin (String currentLine, String pattern) throws Exception {
-        String linkText = "<a href=\"#" + h1_Count+ "-" + h2_Count + "-" + h3_Count + "_" + currentLine.split(H3_PATTERN)[1].toLowerCase().replace(" ", "_") + "\">" + currentLine.split(H3_PATTERN)[1] + "</a>";
+        String linkText = "<a href=\"#" + h1_Count+ "-" + h2_Count + "-" + h3_Count + "_" + currentLine.split(H3_PATTERN)[1].toLowerCase().replace(" ", "_").replace("&", "&amp;").replace("'", "_") + "\">" + currentLine.split(H3_PATTERN)[1] + "</a>";
         return linkText;
     }
 
     private static String produceIDs(String currentLine, String pattern) {
-        String linkID = " id=" + h1_Count+ "-" + h2_Count + "-" + h3_Count + "_" + currentLine.split(pattern)[1].toLowerCase().replace(" ", "_") + ">";
+        String linkID = " id=" + h1_Count+ "-" + h2_Count + "-" + h3_Count + "_" + currentLine.split(pattern)[1].toLowerCase().replace(" ", "_").replace("&", "&amp;").replace("'", "_") + ">";
         return linkID;
     }
 }

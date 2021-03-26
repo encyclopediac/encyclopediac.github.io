@@ -29,7 +29,7 @@
 	--padding_threehalf: calc(var(--padding_default) * 1.5);
 	--padding_half: calc(var(--padding_default) / 2);
 	
-	--image_width: 45%;
+	--image_width: 50%;
 	--sidebar_collapse_button_size: 36px;
 }
 
@@ -39,9 +39,7 @@ html {
 	background-color: var(--cyan_border);
 	font-family: var(--helvetica); 
 }
-/* html * {
-	transition: all 0.2s ease-in;
-} */
+
 div, body, p, h1, h2, h3, h4, h5, img, blockquote, button, ul {
 	margin: 0;
 	padding: 0;
@@ -71,9 +69,6 @@ h4 {
 	font-weight: normal;
 	font-family: monospace, monospace;
 }
-p, button {
-	font-size: var(--fontsize_4);
-}
 ul {
 	padding: 0 0 var(--padding_default) var(--padding_threehalf);
 	line-height: 1.25;
@@ -81,11 +76,9 @@ ul {
 ul:only-child {
 	padding: 0 0 0 var(--padding_default);
 }
-button {
-	border: none;
-	outline: none;
+img {
+	max-width: var(--image_width);
 }
-/* Links */
 a {
 	text-decoration: none;
 	color: black;
@@ -106,32 +99,38 @@ a, button {
 	cursor: pointer;
 }
 
-/* main */
+
 .main {
 	padding: var(--padding_default);
 	overflow-x: hidden;
 }
 
-/* center */
+
 .center.main {
 	width: var(--main_width);
 	margin: 0 var(--main_margin) 0 var(--main_margin);
 	padding: var(--padding_default);
 	background-color: var(--lightcyan_foreground);
 }
+
+.center.main.image {
+	width: var(--main_width);
+	margin: 0 var(--main_margin) 0 var(--main_margin);
+	padding: var(--padding_default);
+	background-color: var(--lightcyan_foreground);
+	text-align: center;
+}
+
 .center.main.responsive {
 	width: var(--main_width_responsive);
 	margin: 0 var(--main_margin_left_responsive) 0 var(--main_margin_right_responsive);
 }
 
-
-/* links */
 .plainlink {
 	text-decoration: none;
 	color: black;
 }
 
-/* hide elements */
 .invisible {
 	display: none;
 }
