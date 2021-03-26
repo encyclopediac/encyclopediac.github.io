@@ -13,6 +13,7 @@
 - Referencing: 
 * Regular reports, studies, and articles follow the current format: [•Title•, (published year/date), author(s)]; then the link to the source if available above the summary.
 * Meta-analyses/Systemic reviews/Literature reviews follow the current format: [•Title•, (published year/date), author(s)] - (summary of meta-analysis/review); then the link to the source if available above the summary.
+* If a source has no date, then 'n.d.' is written.
 ##c
 ##### Gender & Sexism
 #### [C] Impact of Academic Self-Concept (ASC) on Education and Achievement - And the Differences in Gender.
@@ -83,4 +84,63 @@ image Graph of data from the United States illustrating a consistent gap between
 * Researchers may choose not report non-significant effect sizes because non-significant outcomes may not be published (Sutton 2009). Therefore, publication status may be a moderating factor for gender differences in academic self-efficacy. Findings obtained by this meta-analysis do not support this contention.
 * This study tested the assumption of equality of variance of gender groups. Consistent with the finding for self-esteem (Kling et al. 1999), males and females displayed similar variances in terms of academic self-efficacy. Since equality of variance of gender groups holds, comparing means of academic self-efficacy between males and females is valid.
 * To summarize, gender differences in academic self-efficacy were statistically significant but small. However, these small effects may have practical importance. Lent et al. (1986) and Lent et al. (2005) suggested that academic self-efficacy is a key variable in academic/career choice for both male and female students. Moreover, gender gaps in academic self-efficacy increase as age increased in this meta-analysis. Consequently, a small effect size during early life may result in differential economic achievement between males and females because of differences in academic self-efficacy, course selection, and career choices. 
+##c
+##### Transgender people
+#### Cancer
+### Content summary:
+- Test
+##c
+### [C] Trans Women and Breast Cancer 
+[•Cancer Risk in Transgender People•, 2019, Christel J.M. de Blok MD, Koen M.A. Dreijerink MD PhD, Martin den Heijer MD PhD]
+- LINK: https://www.sciencedirect.com/science/article/abs/pii/S0889852919300106
+- SUMMARY: test
+- Key Quotes:
+* Moreover, in the literature, there is evidence that both testosterone and estrogen may play a role in breast cancer risk. Testosterone is thought to have a protective effect, and estrogen a stimulating effect. Because transwomen are commonly treated with both estrogen and anti-androgens, the increase of circulating estrogen and loss of circulating testos- terone could contribute to the observed increased breast cancer risk compared with cisgender men.
+##c
+### [•Care and Cancer Screening of the Transgender Population•, 2019, Allison M. Puechl MD, Kristen Russell, MSW LCSW, Beverly A. Gray MD]
+- LINK: https://www.liebertpub.com/doi/10.1089/jwh.2018.6945
+- SUMMARY: test
+- Key Quotes:
+* Estrogen and its metabolites have been confirmed as carcinogens of breast tissue. Additionally, in cisgender individuals, the length and amount of exposure to estrogens is thought to add to breast cancer risk. Therefore, trans- gender women undergoing medical transition with exogenous estrogens have hormonal factors contributing to their increased breast cancer risk when compared with cisgender men.
+* transgender women have a higher prevalence (60%) of dense breast tissue, an independent risk for breast cancer, and in- creased rates of false-negative mammograms.
+* because of the likely lower incidence of breast cancer in transgender women, screening mammography should not begin before the age of 50. For transgender women not beginning estrogen therapy until after age 50, it is not recommended to begin breast cancer screening until a minimum of 5 years of feminizing hormone use.
+##c
+[•Transgender Breast Cancer Screenings•, n.d.]
+- LINK: https://www.uhhospitals.org/services/cancer-services/breast-cancer/transgender-breast-screenings
+- SUMMARY: test
+- Key Quotes:
+* Transgender women may have a greater chance of getting breast cancer due to the medicines they take to boost female hormones and lower male hormones. A person’s family history and genetic makeup can also increase their chances of breast cancer.
+* If you are 50 years of age or older and you had at least 5 years of hormonal therapy, you should have a screening mammogram every 2 years.
+##c
+### [C] Trans Women and Cervical Cancer
+[•Trans women and cervical cancer screening•, n.d.]
+- LINK: https://www.cancer.ca/en/prevention-and-screening/reduce-cancer-risk/find-cancer-early/screening-in-lgbtq-communities/trans-women-and-cervical-cancer-screening
+- SUMMARY: test
+- Key Quotes:
+* If you’re a trans woman and have not had bottom surgery, you aren’t at risk for cervical cancer.
+* If, however, you’re a trans woman who has had bottom surgery to create a vagina (vaginoplasty) and possibly a cervix, there’s a very small risk that you can develop cancer in the tissues of your neo-vagina or neo-cervix. The risk depends on the type of surgery you had, the type of tissue used to create your vagina and cervix and your personal health history. Talk to your healthcare provider to figure out your specific cancer-screening needs as part of your overall pelvic health following surgery.
+##c
+### [•Care and Cancer Screening of the Transgender Population•, 2019, Allison M. Puechl MD, Kristen Russell, MSW LCSW, Beverly A. Gray MD]
+- LINK: https://www.liebertpub.com/doi/10.1089/jwh.2018.6945
+- SUMMARY: test
+- Key Quotes:
+* human papillomavirus (HPV)
+* Transgender women with surgically created neovaginas are also at risk for contracting HPV and subsequently developing dysplasia or invasive cancer.
+* Neovagina creation in transgender women through penile inversion is the most common technique for vaginoplasty, which results in the keratinized skin from the penile shaft lining the neovagina and a portion of the glans penis creating a neoclitoris. Like all keratinized skin, the neovagina is also susceptible to HPV- induced dysplasia.
+* Additionally, the development of diversion colitis, from the diversion of the fecal stream resulting in a deficiency of nutrients for the colonocytes, leads to long-term inflammation, which theoretically can be associated with increased cancer risk of the neovagina. However, as with all cancer data in the transgender population, no specific incidence or prevalence data exists on cancers of the neovagina. Transgender women who have undergone vaginoplasty, regardless of method, should receive routine examination for the presence of HPV condyloma.
+##c
+##### Welfare and Economics
+#### Behavioural Impact of Welfare
+### Content summary;
+- Test
+### [I] Social Welfare/Cash Transfers Do Not Lead to More Money Spent on Demerit Goods
+[•Cash Transfers and Temptation Goods A Review of Global Evidence•, 2014, David K. Evans, Anna Popova]
+- LINK: http://documents1.worldbank.org/curated/en/617631468001808739/pdf/WPS6886.pdf
+- SUMMARY:
+- Key Quotes:
+* In this study, we use the term “temptation goods” principally to refer to alcohol and tobacco. This study makes no normative assumption as to the value of alcohol and tobacco expenditures but merely seeks to systematically characterize the literature on the impact of cash transfers on these goods.
+* Most cash transfer programs are not focused on either increasing or decreas- ing consumption of these goods specifically, and so most evaluations and the subsequent reviews have not focused on these. Rather, reviews have focused on outcomes in schooling (Saavedra and García 2013; Baird et al. 2014), health (Leroy, Ruel, and Verhofstadt 2009; Ranganathan and Lagarde 2012), con- sumption (Fiszbein and Schady 2009), or a combination of these (IEG 2011). At the same time, many individual evaluations of cash transfer programs have included analysis of the impact on some set of temptation goods within their consumption analysis.
+* Across 50 estimates from 19 studies, we find that almost without exception, studies find either no significant impact or a significant negative impact of trans- fers on expenditures on alcohol and tobacco. Moreover, our meta-analysis for those studies reporting impacts of transfers on total temptation good expen- diture yields a negative, significant average effect. Several robustness checks, in- cluding restricting to randomized trials alone, likewise yield negative (insignif- icant) average effects. 
+* The evidence suggests that cash transfers are not used for alcohol and tobacco at any significant levels, irrespective of region or program design.
+* This finding informs the policy debate in many low-income countries as to whether to introduce cash transfer programs. The vast majority of countries in Sub-Saharan Africa have formally discussed, planned, or piloted some form of cash transfer program (Garcia and Moore 2012). It also informs policy sur- rounding the choice between cash and in-kind transfers, as has been debated in India over the last several years (Drèze 2011; Times of India 2013), insofar as that debate is at least partly driven by public concern that recipients are more likely to spend cash transfers on temptation goods than they are to spend in-kind transfers (Khera 2014). By demonstrating that cash transfers do not in fact increase spending on temptation goods, we implicitly answer this question and further dispel concerns surrounding cash transfers.
 ##c
