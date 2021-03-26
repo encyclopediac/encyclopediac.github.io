@@ -18,7 +18,7 @@ public class TextDocumentReaderWriter {
     private final static String ENDCONTENTSUMMARY_PATTERN = "##c";
     private final static String TITLE_META = "<meta property=\"og:title\" content=";
     private final static String HEAD_HTML_1 = "<!DOCTYPE html><html lang=\"en\"><head><meta name=\"viewport\" content=\"width=device-width\"><meta charset=\"utf-8\">";
-    private final static String HEAD_HTML_2 = "<meta charset=\"utf-8\"/><link rel=\"stylesheet\" href=\"CSSFile.css\"></head>";
+    private final static String HEAD_HTML_2 = "<meta charset=\"utf-8\"/><link rel=\"stylesheet\" href=\"Style.css\"></head>";
     private final static String CENTER_MAIN = "<div id=\"main\" class=\"center main\">";
     private final static int INDENT_PX = 20;
 
