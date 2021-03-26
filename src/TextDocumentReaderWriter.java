@@ -101,7 +101,7 @@ public class TextDocumentReaderWriter {
             } else {
                 if (currentLine.contains("image")) {
                     String imagePath = h1_Count+ "-" + h2_Count + "-" + h3_Count + "-image-" + image_Count + ".png";
-                    writer.write("<div id=\"" + imagePath.split(".png")[0] + "-main\" class=\"image\">");
+                    writer.write("<div id=\"" + imagePath.split(".png")[0] + "-main\" class=\"keyquotes images\">");
                     writer.newLine();
                     writer.write("<img src=\"images/" + imagePath+ "\" alt=\"" + currentLine.split("image ")[1] + "\">");
                     writer.newLine();

@@ -113,7 +113,7 @@ a, button {
 	background-color: var(--lightcyan_foreground);
 }
 
-.image {
+.keyquotes.images {
 	padding: 0 var(--padding_default) var(--padding_default) 0;
 	text-align: center;
 }
