@@ -97,7 +97,7 @@ image Graph of data from the United States illustrating a consistent gap between
 - Key Quotes:
 * Moreover, in the literature, there is evidence that both testosterone and estrogen may play a role in breast cancer risk. Testosterone is thought to have a protective effect, and estrogen a stimulating effect. Because transwomen are commonly treated with both estrogen and anti-androgens, the increase of circulating estrogen and loss of circulating testos- terone could contribute to the observed increased breast cancer risk compared with cisgender men.
 ##c
-### [•Care and Cancer Screening of the Transgender Population•, 2019, Allison M. Puechl MD, Kristen Russell, MSW LCSW, Beverly A. Gray MD]
+[•Care and Cancer Screening of the Transgender Population•, 2019, Allison M. Puechl MD, Kristen Russell, MSW LCSW, Beverly A. Gray MD]
 - LINK: https://www.liebertpub.com/doi/10.1089/jwh.2018.6945
 - SUMMARY: test
 - Key Quotes:
@@ -120,7 +120,7 @@ image Graph of data from the United States illustrating a consistent gap between
 * If you’re a trans woman and have not had bottom surgery, you aren’t at risk for cervical cancer.
 * If, however, you’re a trans woman who has had bottom surgery to create a vagina (vaginoplasty) and possibly a cervix, there’s a very small risk that you can develop cancer in the tissues of your neo-vagina or neo-cervix. The risk depends on the type of surgery you had, the type of tissue used to create your vagina and cervix and your personal health history. Talk to your healthcare provider to figure out your specific cancer-screening needs as part of your overall pelvic health following surgery.
 ##c
-### [•Care and Cancer Screening of the Transgender Population•, 2019, Allison M. Puechl MD, Kristen Russell, MSW LCSW, Beverly A. Gray MD]
+[•Care and Cancer Screening of the Transgender Population•, 2019, Allison M. Puechl MD, Kristen Russell, MSW LCSW, Beverly A. Gray MD]
 - LINK: https://www.liebertpub.com/doi/10.1089/jwh.2018.6945
 - SUMMARY: test
 - Key Quotes:
@@ -133,6 +133,7 @@ image Graph of data from the United States illustrating a consistent gap between
 #### Behavioural Impact of Welfare
 ### Content summary;
 - Test
+##c
 ### [I] Social Welfare/Cash Transfers Do Not Lead to More Money Spent on Demerit Goods
 [•Cash Transfers and Temptation Goods A Review of Global Evidence•, 2014, David K. Evans, Anna Popova]
 - LINK: http://documents1.worldbank.org/curated/en/617631468001808739/pdf/WPS6886.pdf

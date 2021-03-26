@@ -10,8 +10,6 @@ public class TextDocumentReaderWriter {
     private final static String WRITE_FS_FILEPATH = "../Encyclopediac's Totally Impartial Factsheet.html";
     private final static String WRITE_TOC_PATH = "../Encyclopediac's Totally Impartial Factsheet - Table of Contents.html";
 
-    private final static String HYPERLINK_TOC = "Table of Contents"; 
-
     private final static String TITLE_PATTERN = "###### ";
     private final static String H1_PATTERN = "##### ";
     private final static String H2_PATTERN = "#### ";
@@ -155,6 +153,8 @@ public class TextDocumentReaderWriter {
             currentH2FoundInLoop = Integer.parseInt(headers.charAt(12)+"");
             currentH3FoundInLoop = Integer.parseInt(headers.charAt(14)+"");
             if (lastH1FoundInLoop != currentH1FoundInLoop) {
+                lastH2FoundInLoop = 0;
+                lastH3FoundInLoop = 0;
                 lastH1FoundInLoop = currentH1FoundInLoop;
                 tableOfContentsWriter.write("<ul><li style=\"line-height:1.25\">" + "<a href=\"https://encyclopediac.github.io/Encyclopediac's Totally Impartial Factsheet.html#" + headers.split("href=\"#")[1] + "</li></ul>");
             } else if (lastH2FoundInLoop != currentH2FoundInLoop) {
