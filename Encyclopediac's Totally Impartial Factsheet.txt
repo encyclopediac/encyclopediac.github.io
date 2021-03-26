@@ -145,3 +145,49 @@ image Graph of data from the United States illustrating a consistent gap between
 * The evidence suggests that cash transfers are not used for alcohol and tobacco at any significant levels, irrespective of region or program design.
 * This finding informs the policy debate in many low-income countries as to whether to introduce cash transfer programs. The vast majority of countries in Sub-Saharan Africa have formally discussed, planned, or piloted some form of cash transfer program (Garcia and Moore 2012). It also informs policy sur- rounding the choice between cash and in-kind transfers, as has been debated in India over the last several years (Drèze 2011; Times of India 2013), insofar as that debate is at least partly driven by public concern that recipients are more likely to spend cash transfers on temptation goods than they are to spend in-kind transfers (Khera 2014). By demonstrating that cash transfers do not in fact increase spending on temptation goods, we implicitly answer this question and further dispel concerns surrounding cash transfers.
 ##c
+##### LGBT Issues
+#### Conversion Therapy
+### Content summary:
+- test
+##c
+### Impact of Conversion Therapy on Sexual Orientation
+[•What does the scholarly research say about whether conversion therapy can alter sexual orientation without causing harm?•, n.d] - meta-analysis of 47 studies, from Cornell
+- LINK: https://whatweknow.inequality.cornell.edu/topics/lgbt-equality/what-does-the-scholarly-research-say-about-whether-conversion-therapy-can-alter-sexual-orientation-without-causing-harm
+- SUMMARY: test
+- Key Quotes:
+* We identified 47 peer-reviewed studies that that met our criteria for adding to knowledge about whether conversion therapy (CT) can alter sexual orientation without causing harm. Thirteen of those studies included primary research. Of those, 12 concluded that CT is ineffective and/or harmful, finding links to depression, suicidality, anxiety, social isolation and decreased capacity for intimacy. Only one study concluded that sexual orientation change efforts could succeed—although only in a minority of its participants, and the study has several limitations: its entire sample self-identified as religious and it is based on self-reports, which can be biased and unreliable. The remaining 34 studies do not make an empirical determination about whether CT can alter sexual orientation but may offer useful observations to help guide practitioners who treat LGB patients.
+* we concluded that there is no credible evidence that sexual orientation can be changed through therapeutic intervention. Most accounts of such change are akin to instances of “faith healing.” There is also powerful evidence that trying to change a person’s sexual orientation can be extremely harmful. Taken together, the overwhelming consensus among psychologists and psychiatrists who have studied conversion therapy or treated patients who are struggling with their sexual orientation is that therapeutic intervention cannot change sexual orientation, a position echoed by all major professional organizations in the field, including the American Psychological Association whose substantial 2009 report is available here.
+##c
+[•Report of the American Psychological Association Task Force on Appropriate Therapeutic Responses to Sexual Orientation•, 2009, Judith M. Glassgold PsyD, Lee Beckstead PhD, Jack Drescher MD, Beverly Greene PhD, Robin Lin Miller PhD, Roger L. Worthington PhD, Clinton W. Anderson PhD]
+- LINK: https://www.apa.org/pi/lgbt/resources/therapeutic-response.pdf
+- SUMMARY: test
+- Key Quotes:
+* As part of the fulfillment of its charge, the task force undertook an extensive review of the recent literature on psychotherapy and the psychology of sexual orientation. There is a growing body of evidence concluding that sexual stigma, manifested as prejudice and discrimination directed at non-heterosexual sexual orientations and identities, is a major source of stress for sexual minorities.* This stress, known as minority stress, is a factor in mental health disparities found in some sexual minorities. 
+* We see this multiculturally competent and affirmative approach as grounded in an acceptance of the following scientific facts:
+* Same-sex sexual attractions, behavior, and orientations per se are normal and positive variants of human sexuality—in other words, they do not indicate either mental or developmental disorders.
+* Homosexuality and bisexuality are stigmatized, and this stigma can have a variety of negative consequences (e.g., minority stress) throughout the life span.
+* Same-sex sexual attractions and behavior occur in the context of a variety of sexual orientations and sexual orientation identities, and for some, sexual orientation identity (i.e., individual or group membership and affiliation, self-labeling) is fluid or has an indefinite outcome.
+* Gay men, lesbians, and bisexual individuals form stable, committed relationships and families that are equivalent to heterosexual relationships and families in essential respects.
+* The review covered the peer-reviewed journal articles in English from 1960 to 2007. Most studies in this area were conducted before 1981, and only a few studies have been conducted in the last 10 years.
+* We found serious methodological problems in this area of research; only a few studies met the minimal standards for evaluating whether psychological treatments such as efforts to change sexual orientation are effective.
+* We concluded that the early high-quality evidence is the best basis for predicting what the outcome of valid interventions would be.
+* The clinical literature indicated that adults perceive a benefit when they are provided with client-centered, multicultural, evidence-based approaches that provide (a) acceptance and support, (b) a comprehensive assessment, (c) active coping, (d) social support, and (e) identity exploration and development.
+* Our systematic review of the early research found that enduring change to an individual’s sexual orientation was unlikely
+* Our review of the scholarly literature on individuals distressed by their sexual orientation indicated that clients perceived a benefit when offered interventions that emphasize acceptance, support, and recognition of important values and concerns.
+* Studies indicate that experiences of stigma—such as self-stigma, shame, isolation and rejection from relationships and valued communities, lack of emotional support and accurate information, and conflicts between multiple identities and between values and attractions—played a role in creating distress in individuals. Many religious individuals desired to live their lives in a manner consistent with their values (telic congruence); however, telic congruence based on stigma and shame is unlikely to result in psychological well-being.
+* Research indicates that family interventions that reduce rejection and increase acceptance of their child and adolescent are helpful. 
+* We encourage APA to continue its advocacy for LGBT individuals and families and to oppose stigma, prejudice, discrimination, and violence directed at sexual minorities. We recommend that APA take a leadership role in opposing the distortion and selective use of scientific data about homosexuality by individuals and organizations and in supporting the dissemination of accurate scientific and professional information about sexual orientation in order to counteract bias. We encourage APA to engage in collaborative activities with religious communities in pursuit of shared prosocial goals when such collaboration can be done in a mutually respectful manner that is consistent with psychologists’ professional and scientific roles.
+##c
+### Impact of Conversion Therapy on Gender Identity
+[•Association Between Recalled Exposure to Gender Identity Conversion Efforts and Psychological Distress and Suicide Attempts Among Transgender Adults•, 2019, Jack L. Turban MD MHS, Noor Beckwith MD, Sari L. Reisner ScD MA, Alex S. Keuroghlian MD MPH]
+- LINK: https://jamanetwork.com/journals/jamapsychiatry/article-abstract/2749479
+- SUMMARY: test
+- Key Quotes:
+* Of 27 715 transgender survey respondents (mean [SD] age, 31.2 [13.5] years)
+* Gender identity conversion efforts (GICE)
+* Among the 19 741 (71.3%) who had ever spoken to a professional about their gender identity, 3869 (19.6%; 95% CI, 18.7%-20.5%) reported exposure to GICE in their lifetime. Recalled lifetime exposure was associated with severe psychological distress during the previous month (adjusted odds ratio [aOR], 1.56; 95% CI, 1.09-2.24; P < .001) compared with non-GICE therapy. Associations were found between recalled lifetime exposure and higher odds of lifetime suicide attempts (aOR, 2.27; 95% CI, 1.60-3.24; P < .001) and recalled exposure before the age of 10 years and increased odds of lifetime suicide attempts (aOR, 4.15; 95% CI, 2.44-7.69; P < .001). No significant differences were found when comparing exposure to GICE by secular professionals vs religious advisors.
+* The findings suggest that lifetime and childhood exposure to GICE are associated with adverse mental health outcomes in adulthood. These results support policy statements from several professional organizations that have discouraged this practice.
+##c
+
+
+
