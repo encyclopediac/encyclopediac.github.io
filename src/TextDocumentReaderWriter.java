@@ -3,10 +3,14 @@ import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileReader;
 import java.io.FileWriter;
+import java.util.ArrayList;
 
 public class TextDocumentReaderWriter {
-    private final static String READ_FILEPATH = "../Encyclopediac's Totally Impartial Factsheet.txt";
-    private final static String WRITE_FILEPATH = "../Encyclopediac's Totally Impartial Factsheet.html";
+    private final static String READ_TEXTSOURCE_FILEPATH = "../Encyclopediac's Totally Impartial Factsheet.txt";
+    private final static String WRITE_FS_FILEPATH = "../Encyclopediac's Totally Impartial Factsheet.html";
+    private final static String WRITE_TOC_PATH = "../Encyclopediac's Totally Impartial Factsheet - Table of Contents.html";
+
+    private final static String HYPERLINK_TOC = "Table of Contents"; 
 
     private final static String TITLE_PATTERN = "###### ";
     private final static String H1_PATTERN = "##### ";
@@ -21,25 +25,27 @@ public class TextDocumentReaderWriter {
     private final static String TITLE_META = "<meta property=\"og:title\" content=";
     private final static String HEAD_HTML_1 = "<!DOCTYPE html><html lang=\"en\"><head><meta name=\"viewport\" content=\"width=device-width\"><meta charset=\"utf-8\">";
     private final static String HEAD_HTML_2 = "<meta charset=\"utf-8\"/><link rel=\"stylesheet\" href=\"Style.css\"></head>";
-    private final static String CENTER_MAIN = "<div id=\"main\" class=\"center main\">";
+    private final static String CENTRE_MAIN = "<div id=\"main\" class=\"centre main\">";
     private final static int INDENT_PX = 20;
+    private static ArrayList<String> listOfHeaderLinks = new ArrayList<String>();
 
     public static void main(String[] args) throws Exception {
-        BufferedReader reader = new BufferedReader(new FileReader(READ_FILEPATH));
-        File writeToHTML = new File(WRITE_FILEPATH);
+        BufferedReader textSourceReader = new BufferedReader(new FileReader(READ_TEXTSOURCE_FILEPATH));
+        File writeToHTML = new File(WRITE_FS_FILEPATH);
         writeToHTML.delete();
 
-        BufferedWriter writer = new BufferedWriter(new FileWriter(WRITE_FILEPATH));
-        String currentLine = reader.readLine();
+        BufferedWriter factsheetHTMLWriter = new BufferedWriter(new FileWriter(WRITE_FS_FILEPATH));
+        String currentLine = textSourceReader.readLine();
         while (currentLine != null) {
-            writeNextTagsAndOrContent(reader, writer, currentLine);
-            currentLine = reader.readLine();
+            writeNextTagsAndOrContent(textSourceReader, factsheetHTMLWriter, currentLine);
+            currentLine = textSourceReader.readLine();
         }
-        writer.write("</div>");
-        writer.write("</body>");
-        writer.write("</html>");
-        reader.close();
-        writer.close();
+        produceTableOfContents();
+        factsheetHTMLWriter.write("</div>");
+        factsheetHTMLWriter.write("</body>");
+        factsheetHTMLWriter.write("</html>");
+        textSourceReader.close();
+        factsheetHTMLWriter.close();
     }
 
     private static void writeNextTagsAndOrContent(BufferedReader reader, BufferedWriter writer, String currentLine) throws Exception {
@@ -70,7 +76,7 @@ public class TextDocumentReaderWriter {
         writer.write("<title>" + currentLine.split(TITLE_PATTERN)[1] + "</title>");
         writer.write(HEAD_HTML_2);
         writer.write("<body>");
-        writer.write(CENTER_MAIN);
+        writer.write(CENTRE_MAIN);
         writer.newLine();
     }
 
@@ -83,9 +89,11 @@ public class TextDocumentReaderWriter {
         while (!(currentLine.contains(ENDCONTENTSUMMARY_PATTERN))) {
             if (currentLine.equals("")) {
                 //Nothing is done, ignore empty lines.
+            } else if (currentLine.charAt(0) == '+') {
+                writer.write("<ul><li>" + currentLine.split("\\+ ")[1] + "<a href=\"https://encyclopediac.github.io/Encyclopediac's%20Totally%20Impartial%20Factsheet%20-%20Table%20of%20Contents.html.\" style=\"color:blue;text-decoration:underline\">Table of Contents</a>" + "</li></ul>");
+                writer.newLine();
             } else if (currentLine.charAt(0) == '-') {
                 writer.write("<ul><li>" + currentLine.split("- ")[1] + "</li></ul>");
-                //maybe edit to allow for indentation by how many * there are
                 writer.newLine();
             } else if (currentLine.charAt(0) == '*') {
                 int numberOfIndents = 1;
@@ -119,11 +127,47 @@ public class TextDocumentReaderWriter {
 
     private static String h1H2H3LinksBegin (String currentLine, String pattern) throws Exception {
         String linkText = "<a href=\"#" + h1_Count+ "-" + h2_Count + "-" + h3_Count + "_" + currentLine.split(H3_PATTERN)[1].toLowerCase().replace(" ", "_").replace("&", "&amp;").replace("'", "_") + "\">" + currentLine.split(H3_PATTERN)[1] + "</a>";
+        listOfHeaderLinks.add(linkText);
         return linkText;
     }
 
     private static String produceIDs(String currentLine, String pattern) {
         String linkID = " id=" + h1_Count+ "-" + h2_Count + "-" + h3_Count + "_" + currentLine.split(pattern)[1].toLowerCase().replace(" ", "_").replace("&", "&amp;").replace("'", "_") + ">";
         return linkID;
+    }
+
+    private static void produceTableOfContents() throws Exception{
+        BufferedWriter tableOfContentsWriter = new BufferedWriter(new FileWriter(WRITE_TOC_PATH));
+        tableOfContentsWriter.write(HEAD_HTML_1 + TITLE_META + "\"Encyclopediac's Totally Impartial Factsheet - Table of Contents\">" + "<title>Table of Contents</title>" + HEAD_HTML_2);
+        tableOfContentsWriter.newLine();
+        tableOfContentsWriter.write("<body>");
+        tableOfContentsWriter.write(CENTRE_MAIN);
+        tableOfContentsWriter.newLine();
+        tableOfContentsWriter.write("<h1>Encyclopediac's Totally Impartial Factsheet - Table of Contents</h1>");
+        int lastH1FoundInLoop = -1;
+        int currentH1FoundInLoop = 0;
+        int lastH2FoundInLoop = 0;
+        int currentH2FoundInLoop = 0;
+        int lastH3FoundInLoop = 0;
+        int currentH3FoundInLoop = 0;
+        for (String headers : listOfHeaderLinks) {
+            currentH1FoundInLoop = Integer.parseInt(headers.charAt(10)+"");
+            currentH2FoundInLoop = Integer.parseInt(headers.charAt(12)+"");
+            currentH3FoundInLoop = Integer.parseInt(headers.charAt(14)+"");
+            if (lastH1FoundInLoop != currentH1FoundInLoop) {
+                lastH1FoundInLoop = currentH1FoundInLoop;
+                tableOfContentsWriter.write("<ul><li style=\"line-height:1.25\">" + "<a href=\"https://encyclopediac.github.io/Encyclopediac's Totally Impartial Factsheet.html#" + headers.split("href=\"#")[1] + "</li></ul>");
+            } else if (lastH2FoundInLoop != currentH2FoundInLoop) {
+                lastH2FoundInLoop = currentH2FoundInLoop;
+                tableOfContentsWriter.write("<ul style=\"line-height:1.25\"><ul><li>" + "<a href=\"https://encyclopediac.github.io/Encyclopediac's Totally Impartial Factsheet.html#" + headers.split("href=\"#")[1] + "</li></ul></ul>");
+            } else if (lastH3FoundInLoop != currentH3FoundInLoop) {
+                lastH3FoundInLoop = currentH3FoundInLoop;
+                tableOfContentsWriter.write("<ul style=\"line-height:1.25\"><ul><ul><li>" + "<a href=\"https://encyclopediac.github.io/Encyclopediac's Totally Impartial Factsheet.html#" + headers.split("href=\"#")[1] + "</li></ul></ul></ul>");
+            }
+            tableOfContentsWriter.newLine();
+        }
+        tableOfContentsWriter.write("</div>");
+        tableOfContentsWriter.write("</body>");
+        tableOfContentsWriter.close();
     }
 }

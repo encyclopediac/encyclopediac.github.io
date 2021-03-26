@@ -95,7 +95,7 @@ a, button {
 }
 
 
-.center.main {
+.centre.main {
 	width: var(--main_width);
 	margin: 0 var(--main_margin) 0 var(--main_margin);
 	padding: var(--padding_default);
@@ -107,7 +107,7 @@ a, button {
 	text-align: center;
 }
 
-.center.main.responsive {
+.centre.main.responsive {
 	width: var(--main_width_responsive);
 	margin: 0 var(--main_margin_left_responsive) 0 var(--main_margin_right_responsive);
 }
