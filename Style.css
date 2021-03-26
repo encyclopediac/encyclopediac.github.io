@@ -29,7 +29,7 @@
 	--padding_threehalf: calc(var(--padding_default) * 1.5);
 	--padding_half: calc(var(--padding_default) / 2);
 	
-	--image_width: 50%;
+	--image_width: 35%;
 	--sidebar_collapse_button_size: 36px;
 }
 
@@ -113,11 +113,8 @@ a, button {
 	background-color: var(--lightcyan_foreground);
 }
 
-.center.main.image {
-	width: var(--main_width);
-	margin: 0 var(--main_margin) 0 var(--main_margin);
-	padding: var(--padding_default);
-	background-color: var(--lightcyan_foreground);
+.image {
+	padding: 0 var(--padding_default) var(--padding_default) 0;
 	text-align: center;
 }
 
