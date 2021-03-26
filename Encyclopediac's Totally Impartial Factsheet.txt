@@ -57,7 +57,7 @@ https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1532-7795.2010.00644.x (2010),
 ##c
 #### [C] Academic Self-Efficacy (ASE) and Impacts on Achievement - and Differences In Gender.
 ### Content summary:
-- Test
+- ASE is a key predictor of academic achievement and can influence career path and achievement. ASE differs from ASC in that ASE is more task-specific, whereas ASC is more domain-specific (narrow vs. broad). Differences in ASE by girls and boys shows tha boys lead in many ASE metrics, though not all, and that this gap grows more significant with age. The gaps are consistent with gender stereotypes. Therefore: to improve gender balances in a careers and 'economic achievement', society ought to fight against gender stereotypes to prevent the ASE gap from manifesting in a significant way.  
 ##c
 ### Gender Gap in ASE, The Importance of ASE, and the Difference between ASE and ASC.
 https://link.springer.com/article/10.1007/s10212-011-0097-y (2012) - meta-analysis of 187 studies, with a total sample size of 68,429. - [•Gender differences in academic self-efficacy: a meta-analysis•, Chiungjung Huang]
