@@ -13,7 +13,7 @@
 * Regular reports, studies, and articles follow the current format: link-to-source (published year/date), [•Title•, author(s)].
 * Meta-analyses/Systemic reviews/Literature reviews follow the current format: link-to-source (published year/date), meta-analysis And/Or population size, [•Title•, author(s)].
 ##c
-##### Gender
+##### Gender & Sexism
 #### [C] Impact of Academic Self-Concept (ASC) on Education and Achievement - And the Differences in Gender.
 ### Content summary:
 - Not only is ASC closely linked to academic achievement, but it can be seen that increasing the former has positive implications for the latter. Additionally, a consistent gender gap in ASC can be seen across multiple western cultures from grades 7-11, and the gap is likely traceable to gender-stereotypes. A certain ASC in specific domains (boys are seen to lead in ASC in most domains, though not all) can lead to students pursuing different careers and subjects in the future. Therefore: since differing ASCs in certain domains lead to different career and expertise choices later on in life, one way to improve gender distribution in professions and subjects could be seeking to fight against gender stereotypes to decrease the ASC gender gap, which also could lead to improved academic achivement by girls in certain domains.

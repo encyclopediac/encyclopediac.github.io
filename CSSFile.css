@@ -112,59 +112,6 @@ a, button {
 	overflow-x: hidden;
 }
 
-/* sidebars */
-.fixed {
-	position: fixed;
-	top: 0%;
-	bottom: 0%;
-	left: 0%;
-	right: 0%;
-}
-.sidebar.main {
-	background-color: var(--lightcyan_foreground);
-	overflow-y: scroll;
-}
-.sidebar.main.active {
-	padding: 0%;
-	overflow-y: none;
-}
-.sidebar.collapse.holder {
-	background-color: var(--transparent);
-	pointer-events: none;
-	z-index: 2;
-}
-.sidebar.collapse.button {
-	position: relative;
-	top: 50%;
-	height: var(--sidebar_collapse_button_size);
-	width: var(--sidebar_collapse_button_size);
-	border-radius: 50%;
-	border: solid 1px var(--lightcyan_foreground);
-	background-color: var(--gray_dark);
-	color: white;
-	font-family: var(--monospace);
-	text-align: center;
-	pointer-events: auto;
-}
-.sidebar.option.button {
-	background-color: var(--gray_dark);
-	color: white;
-	padding: var(--padding_half);
-}
-
-/* sidebar left */
-.sidebar.left.main {
-	right: var(--sidebar_left_size_inv);
-}
-.sidebar.left.collapse.holder {
-	left: var(--sidebar_left_size);
-	right: calc(var(--sidebar_left_size_inv) - var(--sidebar_collapse_button_size));
-}
-.sidebar.left.collapse.holder.active {
-	left: calc(var(--sidebar_left_size) - var(--sidebar_collapse_button_size));
-	right: var(--sidebar_left_size_inv);
-}
-
 /* center */
 .center.main {
 	width: var(--main_width);
@@ -177,62 +124,6 @@ a, button {
 	margin: 0 var(--main_margin_left_responsive) 0 var(--main_margin_right_responsive);
 }
 
-/* collapsibles */
-.collapsible {
-	background-color: var(--gray_dark);
-	color: white;
-	width: 100%;
-	font-family: var(--helvetica);
-	font-size: var(--fontsize_4);
-	padding: var(--padding_default);
-}
-.collapsible:after,
-.collapsible.active:after {
-	font-family: var(--monospace);
-	float: right;
-}
-.collapsible:after {
-	content: '+';
-}
-.collapsible.active:after {
-	content: "-";
-}
-.collapsible-content {
-	overflow: hidden;
-}
-
-/* descriptions */
-.description_text {
-	margin: 0 0 var(--padding_default) 0;
-	padding: var(--padding_default) var(--padding_default) 0 var(--padding_default);
-}
-.description_quote {
-	margin: var(--padding_default);
-	padding: var(--padding_default);
-	background-color: var(--cyan_border);
-}
-.description_gallery {
-	text-align: center;
-	vertical-align: text-top;
-}
-.description_image {
-	max-width: var(--image_width);
-	padding: 0 var(--padding_default) var(--padding_default) 0;
-}
-
-/* button formatting -- not sure why must include so many cases??? */
-button:hover,
-.sidebar.button:hover,
-button.active,
-.sidebar.button.active {
-	background-color: var(--gray_darkdark);
-}
-.button.active:hover {
-	background-color: var(--gray_darkdarkdark);
-}
-.buttonrow + .buttonrow {
-	padding: var(--padding_default) 0 0 0;
-}
 
 /* links */
 .plainlink {
