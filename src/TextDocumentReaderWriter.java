@@ -9,22 +9,26 @@ public class TextDocumentReaderWriter {
     private final static String READ_TEXTSOURCE_FILEPATH = "../Encyclopediac's Totally Impartial Factsheet.txt";
     private final static String WRITE_FS_FILEPATH = "../Encyclopediac's Totally Impartial Factsheet.html";
     private final static String WRITE_TOC_PATH = "../Encyclopediac's Totally Impartial Factsheet - Table of Contents.html";
+    private final static String TOC_BASE_HYPERLINK = "https://encyclopediac.github.io/Encyclopediac's Totally Impartial Factsheet.html#";
 
     private final static String TITLE_PATTERN = "###### ";
     private final static String H1_PATTERN = "##### ";
     private final static String H2_PATTERN = "#### ";
     private final static String H3_PATTERN = "### ";
+
     private static int h1_Count = -1;
     // this is initialised at -1 so that the count startsfrom 0 when creating IDs.
     private static int h2_Count = 0;
     private static int h3_Count = 0;
     private static int image_Count = 0;
+
     private final static String ENDCONTENTSUMMARY_PATTERN = "##c";
     private final static String TITLE_META = "<meta property=\"og:title\" content=";
     private final static String HEAD_HTML_1 = "<!DOCTYPE html><html lang=\"en\"><head><meta name=\"viewport\" content=\"width=device-width\"><meta charset=\"utf-8\">";
     private final static String HEAD_HTML_2 = "<meta charset=\"utf-8\"/><link rel=\"stylesheet\" href=\"Style.css\"></head>";
     private final static String CENTRE_MAIN = "<div id=\"main\" class=\"centre main\">";
     private final static int INDENT_PX = 20;
+
     private static ArrayList<String> listOfHeaderLinks = new ArrayList<String>();
 
     public static void main(String[] args) throws Exception {
@@ -44,6 +48,7 @@ public class TextDocumentReaderWriter {
         factsheetHTMLWriter.write("</html>");
         textSourceReader.close();
         factsheetHTMLWriter.close();
+        produceSubtopicExclusiveSheets();
     }
 
     private static void writeNextTagsAndOrContent(BufferedReader reader, BufferedWriter writer, String currentLine) throws Exception {
@@ -125,7 +130,7 @@ public class TextDocumentReaderWriter {
     }
 
     private static String h1H2H3LinksBegin (String currentLine, String pattern) throws Exception {
-        String linkText = "<a href=\"#" + h1_Count+ "-" + h2_Count + "-" + h3_Count + "_" + currentLine.split(H3_PATTERN)[1].toLowerCase().replace(" ", "_").replace("&", "&amp;").replace("'", "_") + "\">" + currentLine.split(H3_PATTERN)[1] + "</a>";
+        String linkText = "<a href=\"#" + h1_Count+ "-" + h2_Count + "-" + h3_Count + "_" + currentLine.split(pattern)[1].toLowerCase().replace(" ", "_").replace("&", "&amp;").replace("'", "_") + "\">" + currentLine.split(H3_PATTERN)[1] + "</a>";
         listOfHeaderLinks.add(linkText);
         return linkText;
     }
@@ -157,18 +162,56 @@ public class TextDocumentReaderWriter {
                 lastH2FoundInLoop = 0;
                 lastH3FoundInLoop = 0;
                 lastH1FoundInLoop = currentH1FoundInLoop;
-                tableOfContentsWriter.write("<ul><li style=\"line-height:1.25\">" + "<a href=\"https://encyclopediac.github.io/Encyclopediac's Totally Impartial Factsheet.html#" + headers.split("href=\"#")[1] + "</li></ul>");
+                tableOfContentsWriter.write("<ul><li><a href=\"" + TOC_BASE_HYPERLINK + headers.split("href=\"#")[1] + " (<a href=\"https://encyclopediac.github.io/" + headers.split("\">")[1].split("</a>")[0] + ".html\" style=\"color:blue;text-decoration:underline\">dedicated page here</a>)</li></ul>");
             } else if (lastH2FoundInLoop != currentH2FoundInLoop) {
                 lastH2FoundInLoop = currentH2FoundInLoop;
-                tableOfContentsWriter.write("<ul style=\"line-height:1.25\"><ul><li>" + "<a href=\"https://encyclopediac.github.io/Encyclopediac's Totally Impartial Factsheet.html#" + headers.split("href=\"#")[1] + "</li></ul></ul>");
+                tableOfContentsWriter.write("<ul><ul><li><a href=\"" + TOC_BASE_HYPERLINK + headers.split("href=\"#")[1] + "</li></ul></ul>");
             } else if (lastH3FoundInLoop != currentH3FoundInLoop) {
                 lastH3FoundInLoop = currentH3FoundInLoop;
-                tableOfContentsWriter.write("<ul style=\"line-height:1.25\"><ul><ul><li>" + "<a href=\"https://encyclopediac.github.io/Encyclopediac's Totally Impartial Factsheet.html#" + headers.split("href=\"#")[1] + "</li></ul></ul></ul>");
+                tableOfContentsWriter.write("<ul><ul><ul><li><a href=\"" + TOC_BASE_HYPERLINK + headers.split("href=\"#")[1] + "</li></ul></ul></ul>");
             }
             tableOfContentsWriter.newLine();
         }
         tableOfContentsWriter.write("</div>");
         tableOfContentsWriter.write("</body>");
         tableOfContentsWriter.close();
+    }
+
+    private static void produceSubtopicExclusiveSheets() throws Exception{
+        BufferedReader reader = new BufferedReader(new FileReader(WRITE_FS_FILEPATH));
+        BufferedWriter subtopicWriter = null;
+        File file = null;
+        String currentLine = reader.readLine();
+        boolean isFirstH1 = true;
+        boolean hasFileBegun = false;
+        String filePath = "";
+        while (currentLine != null) {
+            if (currentLine.contains("<h1 ")) {
+                if (!isFirstH1) {
+                    subtopicWriter.write("</div></body>");
+                    subtopicWriter.newLine();
+                    subtopicWriter.flush();
+                } else {
+                    isFirstH1 = false;
+                }
+                filePath = "../" + currentLine.split("\">")[1].split("</a></h1>")[0] + ".html";
+                file = new File(filePath);
+                file.delete();
+                subtopicWriter = new BufferedWriter(new FileWriter("../" + currentLine.split("\">")[1].split("</a></h1>")[0] + ".html"));
+                writeTitleAndMetaTags(subtopicWriter, "###### " + currentLine.split("\">")[1].split("</a></h1>")[0]);
+                subtopicWriter.write(currentLine);
+                subtopicWriter.newLine();
+            } else {
+                if (!hasFileBegun) {
+                    hasFileBegun = true;
+                } else {
+                    subtopicWriter.write(currentLine);
+                    subtopicWriter.newLine();
+                }
+            }
+            currentLine = reader.readLine();
+        }
+        subtopicWriter.close();
+        reader.close();
     }
 }
