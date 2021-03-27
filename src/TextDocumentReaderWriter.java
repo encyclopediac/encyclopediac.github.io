@@ -194,10 +194,10 @@ public class TextDocumentReaderWriter {
                 } else {
                     isFirstH1 = false;
                 }
-                filePath = "../" + currentLine.split("\">")[1].split("</a></h1>")[0] + ".html";
+                filePath = "../subtopics/" + currentLine.split("\">")[1].split("</a></h1>")[0] + ".html";
                 file = new File(filePath);
                 file.delete();
-                subtopicWriter = new BufferedWriter(new FileWriter("../" + currentLine.split("\">")[1].split("</a></h1>")[0] + ".html"));
+                subtopicWriter = new BufferedWriter(new FileWriter("../subtopics/" + currentLine.split("\">")[1].split("</a></h1>")[0] + ".html"));
                 writeTitleAndMetaTags(subtopicWriter, "###### " + currentLine.split("\">")[1].split("</a></h1>")[0]);
                 subtopicWriter.write(currentLine);
                 subtopicWriter.newLine();
