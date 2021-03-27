@@ -95,7 +95,6 @@ image Graph of data from the United States illustrating a consistent gap between
 - SUMMARY: test
 - Key Quotes:
 * Moreover, in the literature, there is evidence that both testosterone and estrogen may play a role in breast cancer risk. Testosterone is thought to have a protective effect, and estrogen a stimulating effect. Because transwomen are commonly treated with both estrogen and anti-androgens, the increase of circulating estrogen and loss of circulating testos- terone could contribute to the observed increased breast cancer risk compared with cisgender men.
-##c
 [•Care and Cancer Screening of the Transgender Population•, 2019, Allison M. Puechl MD, Kristen Russell, MSW LCSW, Beverly A. Gray MD]
 - LINK: https://www.liebertpub.com/doi/10.1089/jwh.2018.6945
 - SUMMARY: test
@@ -103,7 +102,6 @@ image Graph of data from the United States illustrating a consistent gap between
 * Estrogen and its metabolites have been confirmed as carcinogens of breast tissue. Additionally, in cisgender individuals, the length and amount of exposure to estrogens is thought to add to breast cancer risk. Therefore, trans- gender women undergoing medical transition with exogenous estrogens have hormonal factors contributing to their increased breast cancer risk when compared with cisgender men.
 * transgender women have a higher prevalence (60%) of dense breast tissue, an independent risk for breast cancer, and in- creased rates of false-negative mammograms.
 * because of the likely lower incidence of breast cancer in transgender women, screening mammography should not begin before the age of 50. For transgender women not beginning estrogen therapy until after age 50, it is not recommended to begin breast cancer screening until a minimum of 5 years of feminizing hormone use.
-##c
 [•Transgender Breast Cancer Screenings•, n.d.]
 - LINK: https://www.uhhospitals.org/services/cancer-services/breast-cancer/transgender-breast-screenings
 - SUMMARY: test
@@ -118,7 +116,6 @@ image Graph of data from the United States illustrating a consistent gap between
 - Key Quotes:
 * If you’re a trans woman and have not had bottom surgery, you aren’t at risk for cervical cancer.
 * If, however, you’re a trans woman who has had bottom surgery to create a vagina (vaginoplasty) and possibly a cervix, there’s a very small risk that you can develop cancer in the tissues of your neo-vagina or neo-cervix. The risk depends on the type of surgery you had, the type of tissue used to create your vagina and cervix and your personal health history. Talk to your healthcare provider to figure out your specific cancer-screening needs as part of your overall pelvic health following surgery.
-##c
 [•Care and Cancer Screening of the Transgender Population•, 2019, Allison M. Puechl MD, Kristen Russell, MSW LCSW, Beverly A. Gray MD]
 - LINK: https://www.liebertpub.com/doi/10.1089/jwh.2018.6945
 - SUMMARY: test
