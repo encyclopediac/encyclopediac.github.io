@@ -90,11 +90,14 @@ public class TextDocumentReaderWriter {
             } else if (currentLine.charAt(0) == '+') {
                 writer.write("<ul><li>" + currentLine.split("\\+ ")[1] + "<a href=\"https://encyclopediac.github.io/Encyclopediac's%20Totally%20Impartial%20Factsheet%20-%20Table%20of%20Contents.html\" style=\"color:blue;text-decoration:underline\">Table of Contents</a>" + "</li></ul>");
                 writer.newLine();
-            } else if (currentLine.contains("- LINK:")) {
+            } else if (currentLine.contains("- LINK: ")) {
                 writer.write("<ul><li>" + currentLine.split("- ")[1].split("http")[0] + "<a href=\"http"+ currentLine.split("- ")[1].split("http")[1] + "\" style=\"color:blue;text-decoration:underline\">http" + currentLine.split("- ")[1].split("http")[1] + "</a>"+ "</li></ul>");
                 writer.newLine();
             } else if (currentLine.charAt(0) == '-') {
                 writer.write("<ul><li>" + currentLine.split("- ")[1] + "</li></ul>");
+                writer.newLine();
+            } else if (currentLine.charAt(0) == '[') {
+                writer.write("<h4>" + currentLine + "</h4>");
                 writer.newLine();
             } else if (currentLine.charAt(0) == '*') {
                 int numberOfIndents = 1;
@@ -107,8 +110,7 @@ public class TextDocumentReaderWriter {
                 }
                 writer.write("<ul style=\"margin-left:" + INDENT_PX*numberOfIndents + "px\"" + "><li>" + currentLine.split("\\* ")[1] + "</li></ul>");
                 writer.newLine();
-            } else {
-                if (currentLine.contains("image")) {
+            } else if (currentLine.contains("image")) {
                     String imagePath = h1_Count+ "-" + h2_Count + "-" + h3_Count + "-image-" + image_Count + ".png";
                     writer.write("<div id=\"" + imagePath.split(".png")[0] + "-main\" class=\"keyquotes images\">");
                     writer.newLine();
@@ -117,10 +119,6 @@ public class TextDocumentReaderWriter {
                     writer.write("</div>");
                     writer.newLine();
                     image_Count++;
-                } else {
-                    writer.write("<h4>" + currentLine + "</h4>");
-                    writer.newLine();
-                }
             }
             currentLine = reader.readLine();
         }
