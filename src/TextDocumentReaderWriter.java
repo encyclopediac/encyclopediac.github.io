@@ -162,7 +162,7 @@ public class TextDocumentReaderWriter {
                 lastH2FoundInLoop = 0;
                 lastH3FoundInLoop = 0;
                 lastH1FoundInLoop = currentH1FoundInLoop;
-                tableOfContentsWriter.write("<ul><li><a href=\"" + TOC_BASE_HYPERLINK + headers.split("href=\"#")[1] + " (<a href=\"https://encyclopediac.github.io/" + headers.split("\">")[1].split("</a>")[0] + ".html\" style=\"color:blue;text-decoration:underline\">dedicated page here</a>)</li></ul>");
+                tableOfContentsWriter.write("<ul><li><a href=\"" + TOC_BASE_HYPERLINK + headers.split("href=\"#")[1] + " (<a href=\"https://encyclopediac.github.io/subtopics/" + headers.split("\">")[1].split("</a>")[0] + ".html\" style=\"color:blue;text-decoration:underline\">dedicated page here</a>)</li></ul>");
             } else if (lastH2FoundInLoop != currentH2FoundInLoop) {
                 lastH2FoundInLoop = currentH2FoundInLoop;
                 tableOfContentsWriter.write("<ul><ul><li><a href=\"" + TOC_BASE_HYPERLINK + headers.split("href=\"#")[1] + "</li></ul></ul>");
