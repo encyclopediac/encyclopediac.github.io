@@ -91,7 +91,7 @@ public class TextDocumentReaderWriter {
                 writer.write("<ul><li>" + currentLine.split("\\+ ")[1] + "<a href=\"https://encyclopediac.github.io/Encyclopediac's%20Totally%20Impartial%20Factsheet%20-%20Table%20of%20Contents.html\" style=\"color:blue;text-decoration:underline\">Table of Contents</a>" + "</li></ul>");
                 writer.newLine();
             } else if (currentLine.contains("- LINK:")) {
-                writer.write("<ul><li>" + currentLine.split("- ")[1].split("http")[0] + "<a href=\"http"+ currentLine.split("- ")[1].split("http")[1] + "\" style=\"color:blue;text-decoration:underline\">https" + currentLine.split("- ")[1].split("http")[1] + "</a>"+ "</li></ul>");
+                writer.write("<ul><li>" + currentLine.split("- ")[1].split("http")[0] + "<a href=\"http"+ currentLine.split("- ")[1].split("http")[1] + "\" style=\"color:blue;text-decoration:underline\">http" + currentLine.split("- ")[1].split("http")[1] + "</a>"+ "</li></ul>");
                 writer.newLine();
             } else if (currentLine.charAt(0) == '-') {
                 writer.write("<ul><li>" + currentLine.split("- ")[1] + "</li></ul>");
