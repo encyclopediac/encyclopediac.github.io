@@ -181,6 +181,30 @@ image Graph of data from the United States illustrating a consistent gap between
 * Empowerment
 ** available evidence shows that transfers can reduce physical abuse of women by men, but also that they may increase non-physical abuse, such as emotional abuse or controlling behaviour. It supports both the theory that increased income lowers stress-related abuse and the theory that increased income enables the woman to bargain out of abuse. The relatively strong evidence that decision-making power increases for women in the beneficiary household also offers substance to this latter theory. 
 ##c
+[•A Unified Welfare Analysis of Government Policies•, 2020, Nathaniel Hendren and Ben Sprung-Keyser]
+- LINK: https://scholar.harvard.edu/hendren/publications/unified-welfare-analysis-government-policies
+- SUMMARY: test
+- Key Quotes:
+* We divide the willingness to pay by the net cost to the government to form each policy's Marginal Value of Public Funds, or its "MVPF". Comparing MVPFs across policies provides a unified method of assessing their impact on social welfare
+* In this paper, we examine the Marginal Value of Public Funds of 133 different historical policies over the last half-century in the United States. We find a clear and persistent pattern that direct investments in children have yielded the largest MVPFs. There is a large "bang for the buck" associated with a range of expenditures on children from early education to child health insurance to college expenditures.
+* in a meaningful number of cases these policies pay for themselves. In particular, when government expenditures boost human capital, the resulting increase in net government revenue can offset the policy's upfront costs. From a taxpayer perspective, these expenditures on children are investments, rather than just transfers.
+* We find that opportunities for high return investments in children have persisted across policy categories for many decades. This is, however, no guarantee that all future investment in these categories will produce high MVPFs.
+* The 133 policies included in this paper are just a small subset of the policies that could be analyzed using the MVPF. We do not discuss the MVPF of crime policies, environmental policies, macroeconomic stabilization policies, or infrastructure policies, amongst many others. With careful tracking of willingness to pay and net costs, the MVPF can be used in any of these contexts and can guide cost-benefit analyses.
+##c
+#### [USA] Planned Parenthood as Welfare
+### Content summary:
+- test
+### It is a Good Investment - Society Recieves More in Returns than it Pays
+[•Return on Investment: A Fuller Assessment of the Benefits and Cost Savings of the US Publicly Funded Family Planning Program•, 2014, JENNIFER J. FROST, ADAM SONFIELD, MIA R. ZOLNA, LAWRENCE B. FINER]
+- LINK: https://onlinelibrary.wiley.com/doi/10.1111/1468-0009.12080
+- SUMMARY: test
+- Key Quotes:
+* The US publicly supported family planning effort serves millions of women and men each year, and this analysis provides new estimates of its positive impact on a wide range of health outcomes and its net savings to the government.
+* The public investment in family planning programs and providers not only helps women and couples avoid unintended pregnancy and abortion, but also helps many thousands avoid cervical cancer, HIV and other sexually transmitted infections, infertility, and preterm and low birth weight births.
+* This investment resulted in net government savings of $13.6 billion in 2010, or $7.09 for every public dollar spent.
+* In 2010, care provided during publicly supported family plan- ning visits averted an estimated 2.2 million unintended pregnancies, including 287,500 closely spaced and 164,190 preterm or low birth weight (LBW) births, 99,100 cases of chlamydia, 16,240 cases of gonorrhea, 410 cases of HIV, and 13,170 cases of pelvic inflammatory disease that would have led to 1,130 ec- topic pregnancies and 2,210 cases of infertility. Pap and HPV tests and HPV vaccinations prevented an estimated 3,680 cases of cervical cancer and 2,110 cervical cancer deaths; HPV vaccination also prevented 9,000 cases of abnormal sequelae and precancerous lesions. Services provided at health centers supported by the Title X national family planning program accounted for more than half of these benefits. The gross public savings attributed to these services totaled approximately $15.8 billion—$15.7 billion from preventing unplanned births, $123 million from STI/HIV testing, and $23 million from Pap and HPV test- ing and vaccines. Subtracting $2.2 billion in program costs from gross savings resulted in net public-sector savings of $13.6 billion.
+* Public expenditures for the US family planning program not only prevented unintended pregnancies but also reduced the incidence and impact of preterm and LBW births, STIs, infertility, and cervical cancer. This investment saved the government billions of public dollars, equivalent to an estimated taxpayer savings of $7.09 for every public dollar spent.
+##c
 ##### LGBT Issues
 #### Conversion Therapy
 ### Content summary:
