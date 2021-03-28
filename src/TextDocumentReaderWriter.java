@@ -8,7 +8,7 @@ import java.util.ArrayList;
 import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 
-public class TextDocumentReaderWriter{
+public class TextDocumentReaderWriter {
     private final static String READ_TEXTSOURCE_FILEPATH = "../Encyclopediac's Totally Impartial Factsheet.txt";
     private final static String WRITE_FS_FILEPATH = "../Encyclopediac's Totally Impartial Factsheet.html";
     private final static String WRITE_TOC_PATH = "../Encyclopediac's Totally Impartial Factsheet - Table of Contents.html";
