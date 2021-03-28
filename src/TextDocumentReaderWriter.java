@@ -1,11 +1,22 @@
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
 import java.io.FileReader;
 import java.io.FileWriter;
+import java.nio.charset.*;
+import java.nio.charset.StandardCharsets;
+import java.nio.file.Files;
+import java.nio.file.Paths;
+import java.nio.file.StandardOpenOption;
 import java.util.ArrayList;
+import java.io.InputStreamReader;
+import java.io.OutputStreamWriter;
+import java.net.URLDecoder;
+import java.net.URLEncoder;
 
-public class TextDocumentReaderWriter{
+public class TextDocumentReaderWriter {
     private final static String READ_TEXTSOURCE_FILEPATH = "../Encyclopediac's Totally Impartial Factsheet.txt";
     private final static String WRITE_FS_FILEPATH = "../Encyclopediac's Totally Impartial Factsheet.html";
     private final static String WRITE_TOC_PATH = "../Encyclopediac's Totally Impartial Factsheet - Table of Contents.html";
@@ -32,11 +43,10 @@ public class TextDocumentReaderWriter{
     private static ArrayList<String> listOfHeaderLinks = new ArrayList<String>();
 
     public static void main(String[] args) throws Exception {
-        BufferedReader textSourceReader = new BufferedReader(new FileReader(READ_TEXTSOURCE_FILEPATH));
+        BufferedReader textSourceReader = new BufferedReader(new InputStreamReader(new FileInputStream(READ_TEXTSOURCE_FILEPATH), StandardCharsets.UTF_8));
         File writeToHTML = new File(WRITE_FS_FILEPATH);
         writeToHTML.delete();
-
-        BufferedWriter factsheetHTMLWriter = new BufferedWriter(new FileWriter(WRITE_FS_FILEPATH));
+        BufferedWriter factsheetHTMLWriter = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(WRITE_FS_FILEPATH), StandardCharsets.UTF_8));
         String currentLine = textSourceReader.readLine();
         while (currentLine != null) {
             writeNextTagsAndOrContent(textSourceReader, factsheetHTMLWriter, currentLine);
@@ -49,6 +59,7 @@ public class TextDocumentReaderWriter{
         textSourceReader.close();
         factsheetHTMLWriter.close();
         produceSubtopicExclusiveSheets();
+        System.out.println("Done.");
     }
 
     private static void writeNextTagsAndOrContent(BufferedReader reader, BufferedWriter writer, String currentLine) throws Exception {
@@ -141,7 +152,7 @@ public class TextDocumentReaderWriter{
     }
 
     private static void produceTableOfContents() throws Exception{
-        BufferedWriter tableOfContentsWriter = new BufferedWriter(new FileWriter(WRITE_TOC_PATH));
+        BufferedWriter tableOfContentsWriter = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(WRITE_TOC_PATH), StandardCharsets.UTF_8));
         tableOfContentsWriter.write(HEAD_HTML_1 + TITLE_META + "\"Encyclopediac's Totally Impartial Factsheet - Table of Contents\">" + "<title>Table of Contents</title>" + HEAD_HTML_2);
         tableOfContentsWriter.newLine();
         tableOfContentsWriter.write("<body>");
@@ -178,7 +189,7 @@ public class TextDocumentReaderWriter{
     }
 
     private static void produceSubtopicExclusiveSheets() throws Exception{
-        BufferedReader reader = new BufferedReader(new FileReader(WRITE_FS_FILEPATH));
+        BufferedReader reader = new BufferedReader(new InputStreamReader(new FileInputStream(WRITE_FS_FILEPATH), StandardCharsets.UTF_8));
         BufferedWriter subtopicWriter = null;
         File file = null;
         String currentLine = reader.readLine();
@@ -197,7 +208,7 @@ public class TextDocumentReaderWriter{
                 filePath = "../subtopics/" + currentLine.split("\">")[1].split("</a></h1>")[0] + ".html";
                 file = new File(filePath);
                 file.delete();
-                subtopicWriter = new BufferedWriter(new FileWriter("../subtopics/" + currentLine.split("\">")[1].split("</a></h1>")[0] + ".html"));
+                subtopicWriter = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(filePath), StandardCharsets.UTF_8));
                 writeTitleAndMetaTags(subtopicWriter, "###### " + currentLine.split("\">")[1].split("</a></h1>")[0]);
                 subtopicWriter.write(currentLine);
                 subtopicWriter.newLine();
