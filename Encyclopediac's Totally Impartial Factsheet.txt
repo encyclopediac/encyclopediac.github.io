@@ -141,8 +141,8 @@ image Graph of data from the United States illustrating a consistent gap between
 * The evidence suggests that cash transfers are not used for alcohol and tobacco at any significant levels, irrespective of region or program design.
 * This finding informs the policy debate in many low-income countries as to whether to introduce cash transfer programs. The vast majority of countries in Sub-Saharan Africa have formally discussed, planned, or piloted some form of cash transfer program (Garcia and Moore 2012). It also informs policy sur- rounding the choice between cash and in-kind transfers, as has been debated in India over the last several years (Drèze 2011; Times of India 2013), insofar as that debate is at least partly driven by public concern that recipients are more likely to spend cash transfers on temptation goods than they are to spend in-kind transfers (Khera 2014). By demonstrating that cash transfers do not in fact increase spending on temptation goods, we implicitly answer this question and further dispel concerns surrounding cash transfers.
 ##c
-### Cash Transfers Do Not Discourage People From Working
-[I] [•Debunking the Stereotype of the Lazy Welfare Recipient: Evidence from Cash Transfer Programs•, 2017, Abhijit V. Banerjee,  Rema Hanna, Gabriel E. Kreindler,  Benjamin A. Olken]
+### [I] Cash Transfers Do Not Discourage People From Working
+[•Debunking the Stereotype of the Lazy Welfare Recipient: Evidence from Cash Transfer Programs•, 2017, Abhijit V. Banerjee,  Rema Hanna, Gabriel E. Kreindler,  Benjamin A. Olken]
 - LINK: https://academic.oup.com/wbro/article/32/2/155/4098285?login=true
 - SUMMARY: test
 - Key Quotes:
@@ -194,6 +194,7 @@ image Graph of data from the United States illustrating a consistent gap between
 #### [USA] Planned Parenthood as Welfare
 ### Content summary:
 - test
+##c
 ### It is a Good Investment - Society Recieves More in Returns than it Pays
 [•Return on Investment: A Fuller Assessment of the Benefits and Cost Savings of the US Publicly Funded Family Planning Program•, 2014, JENNIFER J. FROST, ADAM SONFIELD, MIA R. ZOLNA, LAWRENCE B. FINER]
 - LINK: https://onlinelibrary.wiley.com/doi/10.1111/1468-0009.12080
