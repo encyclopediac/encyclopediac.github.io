@@ -204,6 +204,25 @@ image Graph of data from the United States illustrating a consistent gap between
 * In 2010, care provided during publicly supported family plan- ning visits averted an estimated 2.2 million unintended pregnancies, including 287,500 closely spaced and 164,190 preterm or low birth weight (LBW) births, 99,100 cases of chlamydia, 16,240 cases of gonorrhea, 410 cases of HIV, and 13,170 cases of pelvic inflammatory disease that would have led to 1,130 ec- topic pregnancies and 2,210 cases of infertility. Pap and HPV tests and HPV vaccinations prevented an estimated 3,680 cases of cervical cancer and 2,110 cervical cancer deaths; HPV vaccination also prevented 9,000 cases of abnormal sequelae and precancerous lesions. Services provided at health centers supported by the Title X national family planning program accounted for more than half of these benefits. The gross public savings attributed to these services totaled approximately $15.8 billion—$15.7 billion from preventing unplanned births, $123 million from STI/HIV testing, and $23 million from Pap and HPV test- ing and vaccines. Subtracting $2.2 billion in program costs from gross savings resulted in net public-sector savings of $13.6 billion.
 * Public expenditures for the US family planning program not only prevented unintended pregnancies but also reduced the incidence and impact of preterm and LBW births, STIs, infertility, and cervical cancer. This investment saved the government billions of public dollars, equivalent to an estimated taxpayer savings of $7.09 for every public dollar spent.
 ##c
+##### Economic Theories
+#### Trickle-Down Economics
+### Content summary:
+- test
+##c
+### Trickle-Down Economics: Tax-breaks are ineffective at much else apart from increasing income inequality
+[•The Economic Consequences of Major Tax Cuts for the Rich•, 2020, David Hope, Julian Limberg]
+- LINK: http://eprints.lse.ac.uk/107919/1/Hope_economic_consequences_of_major_tax_cuts_published.pdf
+- SUMMARY: test
+- Key Quotes:
+* This paper uses data from 18 OECD countries over the last five decades to estimate the causal effect of major tax cuts for the rich on income inequality, economic growth, and un- employment
+* We find that major reforms reducing taxes on the rich lead to higher income inequality as measured by the top 1% share of pre-tax national income. The effect remains stable in the medium term. In contrast, such reforms do not have any significant effect on economic growth and unemployment.
+* We find that major tax cuts for the rich push up income inequality, as measured by the top 1% share of pre-tax national income. The size of the effect is substantial: on average, each major tax cut results in a rise of 0.8 percentage points in top 1% share of pre-tax national income. The effect holds in both the short and medium term. Turning our attention to economic performance, we find no significant effects of major tax cuts for the rich. More specifically, the trajectories of real GDP per capita and the unemployment rate are unaffected by significant reductions in taxes on the rich in both the short and medium term.
+* [the data] provide causal evidence that supports the growing pool of evidence from correlational studies that cutting taxes on the rich increases top income shares, but has little effect on economic performance (Lee and Gordon, 2005; Piketty et al., 2014; Roine et al., 2009).
+[I] [•Corporate Tax Breaks and Executive Compensation•, 2021, Eric Ohrn]
+- LINK: https://ericohrn.sites.grinnell.edu/research.html
+- SUMMARY: test
+* I analyze the effect of two corporate tax breaks, bonus depreciation and the Domestic Production Activities Deduction (DPAD), on executive compensation in publicly traded US firms. I find both tax breaks significantly increase executive compensation. For every dollar a firm benefits from the tax breaks, compensation of the firm’s top five highest paid executives increases by 15 to 19 cents. These effects are much larger than the effect of corporate tax cuts on average wages, suggesting the tax breaks increase within-firm income inequality.
+##c
 ##### LGBT Issues
 #### Conversion Therapy
 ### Content summary:
