@@ -13,6 +13,7 @@
 * Regular reports, studies, and articles follow the current format: [•Title•, (published year/date), author(s)]; then the link to the source if available above the summary.
 * Meta-analyses/Systemic reviews/Literature reviews follow the current format: [•Title•, (published year/date), author(s)] - (summary of meta-analysis/review); then the link to the source if available above the summary.
 * If a source has no date, then 'n.d.' is written.
+* Comments from me, and not the authors of the source, are noted by [] brackets.
 ##c
 ##### Gender & Sexism
 #### Impact of Academic Self-Concept (ASC) on Education and Achievement - And the Differences in Gender.
@@ -188,6 +189,37 @@ image Graph of data from the United States illustrating a consistent gap between
 * in a meaningful number of cases these policies pay for themselves. In particular, when government expenditures boost human capital, the resulting increase in net government revenue can offset the policy's upfront costs. From a taxpayer perspective, these expenditures on children are investments, rather than just transfers.
 * We find that opportunities for high return investments in children have persisted across policy categories for many decades. This is, however, no guarantee that all future investment in these categories will produce high MVPFs.
 * The 133 policies included in this paper are just a small subset of the policies that could be analyzed using the MVPF. We do not discuss the MVPF of crime policies, environmental policies, macroeconomic stabilization policies, or infrastructure policies, amongst many others. With careful tracking of willingness to pay and net costs, the MVPF can be used in any of these contexts and can guide cost-benefit analyses.
+##c
+#### Universal Basic Income
+### Content summary
+- test
+### UBI does not Meaningfully Lower Labour Supply 
+[•Is There Empirical Evidence on How the Implementation of a Universal Basic Income (UBI) Affects Labour Supply? A Systematic Review•, 2020, Manuela A. de Paz-Báñez, María José Asensio-Coto, Celia Sánchez-López, María-Teresa Aceytuno] - systematic review of 18 empirical cases and 38 studies
+- LINK: https://www.mdpi.com/2071-1050/12/22/9459/htm
+- SUMMARY: test
+- Key Quotes:
+* [Places where policy was tested: 
+** Partial UBI: Alaska, Iran 
+** Field Experiments: Finland, (Ontario) Canada, Kenya, Namibia
+** Microsimulation: Australia, Germany, Italy, United Kingdom, European Union, Ecuador]
+* The results speak for themselves: Despite a detailed search, we have not found any evidence of a significant reduction in labour supply. Instead, we found evidence that labour supply increases globally among adults, men and women, young and old, and the existence of some insignificant and functional reductions to the system such as a decrease in workers from the following categories: Children, the elderly, the sick, those with disabilities, women with young children to look after, or young people who continued studying. These reductions do not reduce the overall supply since it is largely offset by increased supply from other members of the community
+* a considerable decrease in the labour supply would make its application unsustainable despite its positive effects in reducing poverty, inequality, or improving the physical and psychological health of the most disadvantaged population. On the contrary, an increase in the labour supply, the absence of a significant result, or a small reduction, especially in some cases (children, the elderly, the sick, etc.) may be one more argument in favour of its implementation.
+* we have not found any empirical evidence that the implementation of a UBI causes a reduction in the labour supply that makes it unsustainable in the long term. In strictly scientific terms, no evidence has been found of most of the negative effects attributed to a UBI. Despite the limitations of the methodologies used for these empirical analyses, the results speak for themselves.
+* we found a slight decrease in the labour supply, in terms of the number of hours worked and participation, in some cases. These cases are usually related to the need to dedicate time to other activities: Basically, care and training. There is also a slight reduction in some cases of the elderly population and in people with disabilities, and a more important decrease in the labour supply of children. We found only one case, in Iran, where the population between 20 and 29 years old reduces their labour supply partly to dedicate themselves to training, but it is not clear that another part is not simply dedicated to leisure since they have little attachment to work. However, it is limited and this result has been questioned by subsequent studies
+* In some cases, there is also a transfer of the working population from poorly paid jobs with poor working conditions to jobs with better conditions and wages, or towards entrepreneurship. This is observed with the strategy of more training and better conditions to be able to negotiate with the employer, as it is not necessary to take any job only to survive.
+* other evidence has been the activation of people who were not able to relocate, buy clean clothes, and lacked a means of transportation, in addition to not having the constant threat of losing the aid that allows them to survive if they accept a very temporary job. This has increased the labour supply in the adult population of working age in general, both male and female, especially on low incomes. Therefore, increases in labour supply are observed in the underprivileged population in general
+* Keynesian rooted theories that are based on demand and not only on supply, suggest that UBI will improve local consumption and with it the demand for local employment with effects on the improvement of working conditions and productivity, which would improve wages and with it the labour supply without causing inflation, in principle. This has also been observed in empirical evidence, as we have seen above.
+* Although it is not the subject of this systematic review, we have also found positive effects in other labour aspects: The improvement in working conditions in the worst jobs seems related to a greater capacity for labour negotiation; the increase in formal employment for lower jobs, especially if this measure replaces conditional transfers, due to the possibility of combining formal employment and benefit. Changes towards better jobs and entrepreneurship have also been observed. Another aspect of interest is the change in labour demand.
+* UBI is not only an effective instrument to reduce poverty and inequality and improve social welfare, but it is also sustainable in relation to employment.
+##c
+### UBI has Positive Potential for Economic Growth
+[I] [•Modeling the Macroeconomic Effects of a Universal Basic Income•, 2017, Michalis Nikiforos, Marshall Steinbaum, Gennaro Zezza]
+- LINK: https://rooseveltinstitute.org/wp-content/uploads/2020/07/RI-Macroeconomic-Effects-of-UBI-201708.pdf
+- SUMMARY: test
+- Key Quotes:
+* Overall, we find that the economy can not only withstand large increases in federal spending, but could also grow thanks to the stimulative effects of cash transfers on the economy.
+* enacting a UBI and paying for it by increasing the federal debt would grow the economy. Under the smallest spending scenario, $250 per month for each child, GDP is 0.79% larger than under the baseline forecast after eight years. According to the Levy Model, the largest cash program - $1,000 for all adults annually - expands the economy by 12.56% over the baseline after eight years. After eight years of enactment, the stimulative effects of the program dissipate and GDP growth returns to the baseline forecast, but the level of output remains permanently higher.
+* when the model is adapted to include distributional effects, the economy grows, even in the tax-financed scenarios. This occurs because the distributional model incorporates the idea that an extra dollar in the hands of lower income households leads to higher spending. In other words, the households that pay more in taxes than they receive in cash assistance have a low propensity to consume, and those that receive more in assistance than they pay in taxes have a high propensity to consume. Thus, even when the policy is tax- rather than debt-financed, there is an increase in output, employment, prices, and wages.
 ##c
 #### [USA] Planned Parenthood as Welfare
 ### Content summary:
