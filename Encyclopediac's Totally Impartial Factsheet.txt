@@ -259,7 +259,7 @@ image Graph of data from the United States illustrating a consistent gap between
 ##### LGBT Issues
 #### Conversion Therapy
 ### Content summary:
-- For conversion of sexual orientation: not only is sexual orientation not something which is necessary to alter, the process of altering sexual orientation produces harmful psychological effects and is unlikely to even be able to change the sexual orientation of a person. For gender identity, similarly, the process of relying on conversion as a tactic rather than a more compassionate form of therapy leads to increased suicide attempts during a person's life time. Therefore: conversion therapy is an inhumane practise to attempt to fix what does not require fixing; the practise universally leads to worse psychological outcomes and the feautures it attempts to convert are not features worth converting; this means this should not be advocated as policy, and opposed where it is still practised.
+- For conversion of sexual orientation: not only is sexual orientation not something which is necessary to alter, the process of altering sexual orientation produces harmful psychological effects and is unlikely to even be able to change the sexual orientation of a person. For gender identity, similarly, the process of relying on conversion as a tactic rather than a more compassionate form of therapy leads to increased suicide attempts during a person's lifetime. Therefore: conversion therapy is an inhumane practise to attempt to fix what does not require fixing; the practise universally leads to worse psychological outcomes and the feautures it attempts to convert are not features worth converting; this means this should not be advocated as policy, and opposed where it is still practised.
 ##c
 ### Impact of Conversion Therapy on Sexual Orientation
 [•What does the scholarly research say about whether conversion therapy can alter sexual orientation without causing harm?•, n.d] - meta-analysis of 47 studies, from Cornell
@@ -298,6 +298,3 @@ image Graph of data from the United States illustrating a consistent gap between
 * Among the 19 741 (71.3%) who had ever spoken to a professional about their gender identity, 3869 (19.6%; 95% CI, 18.7%-20.5%) reported exposure to GICE in their lifetime. Recalled lifetime exposure was associated with severe psychological distress during the previous month (adjusted odds ratio [aOR], 1.56; 95% CI, 1.09-2.24; P < .001) compared with non-GICE therapy. Associations were found between recalled lifetime exposure and higher odds of lifetime suicide attempts (aOR, 2.27; 95% CI, 1.60-3.24; P < .001) and recalled exposure before the age of 10 years and increased odds of lifetime suicide attempts (aOR, 4.15; 95% CI, 2.44-7.69; P < .001). No significant differences were found when comparing exposure to GICE by secular professionals vs religious advisors.
 * The findings suggest that lifetime and childhood exposure to GICE are associated with adverse mental health outcomes in adulthood. These results support policy statements from several professional organizations that have discouraged this practice.
 ##c
-
-
-
