@@ -309,3 +309,20 @@ image Graph of data from the United States illustrating a consistent gap between
 * The American Academy of Child and Adolescent Psychiatry finds no evidence to support the application of any “therapeutic intervention” operating under the premise that a specific sexual orientation, gender identity, and/or gender expression is pathological. Furthermore, based on the scientific evidence, the AACAP asserts that such “conversion therapies” (or other interventions imposed with the intent of promoting a particular sexual orientation and/or gender as a preferred outcome) lack scientific credibility and clinical utility.
 * there is evidence that such interventions are harmful. As a result, “conversion therapies” should not be part of any behavioral health treatment of children and adolescents.
 ##c
+##### Autism
+#### Autism and Vaccines
+### Content summary
+- Autism, by very extensive consensus across different reviews and studies, has no link with vaccinations. Therefore: the anti-vaccination argument that vaccinations are linked with autism is demonstrably false and lacking merit.
+##c
+### Vaccines do not Cause Autism
+[•Vaccines are not associated with autism: An evidence-based meta-analysis of case-control and cohort studies•, 2014, Luke E.Taylor, Amy L.Swerdfeger, Guy D.Eslick] - meta-analysis of five cohort studies with a total of  1,256,407 children participants, and five case-control studies with a total of 9,920 children participants.
+- SUMMARY: It is the overwhelming consensus that vaccines have no relationship with vaccines in any way. The meta-analysis uses data from the USA, UK, Denmark, Japan, and Poland, showing that the lack of relationship persists despite different medical cultures and institutions. The children participant population size (1,256,407 + 9,920) shows that the likelihood of the data being coincidental or the product of publication bias is very low (though a publication bias check is performed in the meta-analysis itself). Therefore: arguments against immunisation for this reason are invalid.
+- Key Quotes
+* The cohort data revealed no relationship between vaccination and autism (OR: 0.99; 95% CI: 0.92 to 1.06) or ASD (OR: 0.91; 95% CI: 0.68 to 1.20), nor was there a relationship between autism and MMR (OR: 0.84; 95% CI: 0.70 to 1.01), or thimerosal (OR: 1.00; 95% CI: 0.77 to 1.31), or mercury (Hg) (OR: 1.00; 95% CI: 0.93 to 1.07).
+* the case-control data found no evidence for increased risk of developing autism or ASD following MMR, Hg, or thimerosal exposure when grouped by condition (OR: 0.90, 95% CI: 0.83 to 0.98; p = 0.02) or grouped by exposure type (OR: 0.85, 95% CI: 0.76 to 0.95; p = 0.01). 
+* Findings of this meta-analysis suggest that vaccinations are not associated with the development of autism or autism spectrum disorder.
+* Five cohort studies involving 1,256,407 children, and five case-control studies involving 9,920 children were included in this analysis.
+* In the process of searching the literature 12 systematic reviews were identified and reference lists searched for additional data [24], [25], [26], [27], [28], [29], [30], [31], [32], [33], [34], [35]. Eleven of the 12 identified reviews shared the current conclusion that there was no evidence for a link between vaccination and autistic spectrum disorder, advocating continuation of current immunisation practices.
+* In conclusion, this meta-analysis provides no evidence of a relationship between vaccination and autism or autism spectrum disorders and as such advocate the continuation of immunisation programs according to national guidelines.
+* In regards specifically to the fear of a child developing autism following immunisation, the data consistently shows the lack of evidence for an association between autism, ASD and vaccination, regardless of whether the intervention was the MMR vaccine itself or one of its components, providing no reason to avoid immunisation on these grounds.
+##c
