@@ -96,10 +96,10 @@ public class TextDocumentReaderWriter {
             if (currentLine.equals("")) {
                 //Nothing is done, ignore empty lines.
             } else if (currentLine.charAt(0) == '+') {
-                writer.write("<ul><li>" + currentLine.split("\\+ ")[1] + "<a href=\"https://encyclopediac.github.io/Encyclopediac's%20Totally%20Impartial%20Factsheet%20-%20Table%20of%20Contents.html\" style=\"color:blue;text-decoration:underline\">Table of Contents</a>" + "</li></ul>");
+                writer.write("<ul><li>" + currentLine.split("\\+ ")[1] + "<a target=\"_blank\" href=\"https://encyclopediac.github.io/Encyclopediac's%20Totally%20Impartial%20Factsheet%20-%20Table%20of%20Contents.html\" style=\"color:blue;text-decoration:underline\">Table of Contents</a>" + "</li></ul>");
                 writer.newLine();
             } else if (currentLine.contains("- LINK: ")) {
-                writer.write("<ul><li>" + currentLine.split("- ")[1].split("http")[0] + "<a href=\"http"+ currentLine.split("- ")[1].split("http")[1] + "\" style=\"color:blue;text-decoration:underline\">http" + currentLine.split("- ")[1].split("http")[1] + "</a>"+ "</li></ul>");
+                writer.write("<ul><li>" + currentLine.split("- ")[1].split("http")[0] + "<a target=\"_blank\" href=\"http"+ currentLine.split("- ")[1].split("http")[1] + "\" style=\"color:blue;text-decoration:underline\">http" + currentLine.split("- ")[1].split("http")[1] + "</a>"+ "</li></ul>");
                 writer.newLine();
             } else if (currentLine.charAt(0) == '-') {
                 writer.write("<ul><li>" + currentLine.split("- ")[1] + "</li></ul>");
@@ -165,13 +165,13 @@ public class TextDocumentReaderWriter {
                 lastH2FoundInLoop = 0;
                 lastH3FoundInLoop = 0;
                 lastH1FoundInLoop = currentH1FoundInLoop;
-                tableOfContentsWriter.write("<ul><li><a href=\"" + TOC_BASE_HYPERLINK + headers.split("href=\"#")[1] + " (<a href=\"https://encyclopediac.github.io/subtopics/" + headers.split("\">")[1].split("</a>")[0] + ".html\" style=\"color:blue;text-decoration:underline\">dedicated page here</a>)</li></ul>");
+                tableOfContentsWriter.write("<ul><li><a target=\"_blank\" href=\"" + TOC_BASE_HYPERLINK + headers.split("href=\"#")[1] + " (<a href=\"https://encyclopediac.github.io/subtopics/" + headers.split("\">")[1].split("</a>")[0] + ".html\" style=\"color:blue;text-decoration:underline\">dedicated page here</a>)</li></ul>");
             } else if (lastH2FoundInLoop != currentH2FoundInLoop) {
                 lastH2FoundInLoop = currentH2FoundInLoop;
-                tableOfContentsWriter.write("<ul><ul><li><a href=\"" + TOC_BASE_HYPERLINK + headers.split("href=\"#")[1] + "</li></ul></ul>");
+                tableOfContentsWriter.write("<ul><ul><li><a target=\"_blank\" href=\"" + TOC_BASE_HYPERLINK + headers.split("href=\"#")[1] + "</li></ul></ul>");
             } else if (lastH3FoundInLoop != currentH3FoundInLoop) {
                 lastH3FoundInLoop = currentH3FoundInLoop;
-                tableOfContentsWriter.write("<ul><ul><ul><li><a href=\"" + TOC_BASE_HYPERLINK + headers.split("href=\"#")[1] + "</li></ul></ul></ul>");
+                tableOfContentsWriter.write("<ul><ul><ul><li><a target=\"_blank\" href=\"" + TOC_BASE_HYPERLINK + headers.split("href=\"#")[1] + "</li></ul></ul></ul>");
             }
             tableOfContentsWriter.newLine();
         }
