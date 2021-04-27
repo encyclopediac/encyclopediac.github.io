@@ -352,6 +352,7 @@ image Table presenting the composition of the 8% group which has transitioned an
 ##c
 ### Vaccines do not Cause Autism
 [•Vaccines are not associated with autism: An evidence-based meta-analysis of case-control and cohort studies•, 2014, Luke E.Taylor, Amy L.Swerdfeger, Guy D.Eslick] - meta-analysis of five cohort studies with a total of  1,256,407 children participants, and five case-control studies with a total of 9,920 children participants.
+- LINK: https://pubmed.ncbi.nlm.nih.gov/24814559/
 - SUMMARY: [NOTE: This is not medical advise and should not be treated as such.] It is the overwhelming consensus that vaccines have no relationship with vaccines in any way. The meta-analysis uses data from the USA, UK, Denmark, Japan, and Poland, showing that the lack of relationship persists despite different medical cultures and institutions. The children participant population size (1,256,407 + 9,920) shows that the likelihood of the data being coincidental or the product of publication bias is very low (though a publication bias check is performed in the meta-analysis itself). Therefore: arguments against immunisation for this reason are invalid.
 - Key Quotes
 * The cohort data revealed no relationship between vaccination and autism (OR: 0.99; 95% CI: 0.92 to 1.06) or ASD (OR: 0.91; 95% CI: 0.68 to 1.20), nor was there a relationship between autism and MMR (OR: 0.84; 95% CI: 0.70 to 1.01), or thimerosal (OR: 1.00; 95% CI: 0.77 to 1.31), or mercury (Hg) (OR: 1.00; 95% CI: 0.93 to 1.07).
